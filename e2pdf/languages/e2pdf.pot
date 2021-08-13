@@ -1,0 +1,2002 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: e2pdf\n"
+"POT-Creation-Date: 2019-12-06 19:40+0200\n"
+"PO-Revision-Date: 2017-07-31 09:56+0300\n"
+"Last-Translator: \n"
+"Language-Team: e2pdf <support@e2pdf.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.6\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: classes/controller/e2pdf-license.php:70
+msgid "License Key updated successfully"
+msgstr ""
+
+#: classes/controller/e2pdf-settings.php:25
+#: classes/controller/e2pdf-settings.php:113
+#: classes/controller/e2pdf-settings.php:147
+#: classes/controller/e2pdf-settings.php:167
+#: classes/controller/e2pdf-settings.php:192
+#: classes/controller/e2pdf-settings.php:225
+msgid "Settings saved"
+msgstr ""
+
+#: classes/controller/e2pdf-settings.php:73
+msgid "Please choose font to upload"
+msgstr ""
+
+#: classes/controller/e2pdf-settings.php:77
+#: classes/controller/e2pdf-templates.php:481
+#: classes/controller/e2pdf-templates.php:1123
+#: classes/controller/e2pdf-templates.php:1365
+msgid "Incorrect file extension"
+msgstr ""
+
+#: classes/controller/e2pdf-settings.php:79
+#: classes/controller/e2pdf-templates.php:483
+#: classes/controller/e2pdf-templates.php:1125
+#: classes/controller/e2pdf-templates.php:1367
+msgid "Incompatible type"
+msgstr ""
+
+#: classes/controller/e2pdf-settings.php:81
+msgid "Font with this filename already exists"
+msgstr ""
+
+#: classes/controller/e2pdf-settings.php:83
+msgid "Font with this name already exists"
+msgstr ""
+
+#: classes/controller/e2pdf-settings.php:85
+msgid "Font uploaded successfully"
+msgstr ""
+
+#: classes/controller/e2pdf-settings.php:125
+msgid "App authorized successfully"
+msgstr ""
+
+#: classes/controller/e2pdf-settings.php:278
+msgid "Font removed successfully"
+msgstr ""
+
+#: classes/controller/e2pdf-settings.php:310
+msgid "E-mail address incorrect"
+msgstr ""
+
+#: classes/controller/e2pdf-settings.php:314
+msgid "Confirmation code incorrect"
+msgstr ""
+
+#: classes/controller/e2pdf-templates.php:57
+msgid "Templates Moved To Trash"
+msgstr ""
+
+#: classes/controller/e2pdf-templates.php:63
+msgid "Templates Activated"
+msgstr ""
+
+#: classes/controller/e2pdf-templates.php:69
+msgid "Templates Deactivated"
+msgstr ""
+
+#: classes/controller/e2pdf-templates.php:74
+msgid "Templates Restored"
+msgstr ""
+
+#: classes/controller/e2pdf-templates.php:79
+msgid "Templates Deleted"
+msgstr ""
+
+#: classes/controller/e2pdf-templates.php:136
+#: classes/controller/e2pdf-templates.php:360
+#: classes/controller/e2pdf-templates.php:854
+#: classes/controller/e2pdf-templates.php:908 classes/controller/e2pdf.php:98
+msgid "Template can't be loaded"
+msgstr ""
+
+#: classes/controller/e2pdf-templates.php:380
+msgid "Template moved to trash"
+msgstr ""
+
+#: classes/controller/e2pdf-templates.php:401
+msgid "Template restored"
+msgstr ""
+
+#: classes/controller/e2pdf-templates.php:423
+msgid "Template deleted"
+msgstr ""
+
+#: classes/controller/e2pdf-templates.php:444
+msgid "Template copy created"
+msgstr ""
+
+#: classes/controller/e2pdf-templates.php:477
+msgid "Please choose template to upload"
+msgstr ""
+
+#: classes/controller/e2pdf-templates.php:653
+msgid "Template imported successfully"
+msgstr ""
+
+#: classes/controller/e2pdf-templates.php:666
+#: classes/controller/e2pdf-templates.php:863
+#, php-format
+msgid "PHP Extension <strong>%s</strong> not found"
+msgstr ""
+
+#: classes/controller/e2pdf-templates.php:672
+msgid "Template Options"
+msgstr ""
+
+#: classes/controller/e2pdf-templates.php:675
+msgid "Overwrite template by ID"
+msgstr ""
+
+#: classes/controller/e2pdf-templates.php:683
+msgid "Import Images"
+msgstr ""
+
+#: classes/controller/e2pdf-templates.php:691
+msgid "Import Fonts"
+msgstr ""
+
+#: classes/controller/e2pdf-templates.php:701
+msgid "Item Options"
+msgstr ""
+
+#: classes/controller/e2pdf-templates.php:704
+msgid "Import Item"
+msgstr ""
+
+#: classes/controller/e2pdf-templates.php:874
+#: classes/model/e2pdf-loader.php:285
+#: classes/view/metaboxes/e2pdf_templates_save.php:35
+msgid "Options"
+msgstr ""
+
+#: classes/controller/e2pdf-templates.php:877
+msgid "Include Item"
+msgstr ""
+
+#: classes/controller/e2pdf-templates.php:886
+msgid "Include Images"
+msgstr ""
+
+#: classes/controller/e2pdf-templates.php:894
+msgid "Include Fonts"
+msgstr ""
+
+#: classes/controller/e2pdf-templates.php:959
+#: classes/controller/frontend/e2pdf-download.php:159
+#: classes/model/e2pdf-adobesign.php:151 classes/model/e2pdf-adobesign.php:234
+#: classes/model/e2pdf-api.php:99 classes/model/e2pdf-convert.php:85
+msgid "Something went wrong!"
+msgstr ""
+
+#: classes/controller/e2pdf-templates.php:987
+msgid "Template saved successfully"
+msgstr ""
+
+#: classes/controller/e2pdf-templates.php:1032
+msgid "Auto Form from PDF"
+msgstr ""
+
+#: classes/controller/e2pdf-templates.php:1041 classes/controller/e2pdf.php:30
+#: classes/controller/e2pdf.php:142 classes/controller/e2pdf.php:168
+#: classes/model/e2pdf-loader.php:346 classes/view/page-e2pdf.php:51
+msgid "--- Select ---"
+msgstr ""
+
+#: classes/controller/e2pdf-templates.php:1076
+msgid "You must set Item to use <strong>Visual Mapper</strong>"
+msgstr ""
+
+#: classes/controller/e2pdf-templates.php:1080
+msgid "Sorry, this extension doesn't support <strong>Visual Mapper</strong>"
+msgstr ""
+
+#: classes/controller/e2pdf-templates.php:1108
+#: classes/model/e2pdf-revision.php:175 classes/model/e2pdf-template.php:161
+#: classes/model/e2pdf-template.php:688
+msgid "(no title)"
+msgstr ""
+
+#: classes/controller/e2pdf-templates.php:1317
+#: classes/controller/e2pdf-templates.php:1528
+msgid "PDF can't be parsed"
+msgstr ""
+
+#: classes/controller/e2pdf-templates.php:1413
+#, php-format
+msgid "Position of %s page incorrect"
+msgstr ""
+
+#: classes/controller/e2pdf-templates.php:1415
+#, php-format
+msgid "Width of PDF Page %s can't be less width of Template Page %s"
+msgstr ""
+
+#: classes/controller/e2pdf-templates.php:1417
+#, php-format
+msgid "Height of PDF Page %s can't be less height of Template Page %s"
+msgstr ""
+
+#: classes/controller/e2pdf-templates.php:1696
+msgid "(Copy)"
+msgstr ""
+
+#: classes/controller/e2pdf-templates.php:1988
+#: classes/model/e2pdf-loader.php:362
+#: classes/view/metaboxes/e2pdf_templates_save.php:141
+msgid "Save"
+msgstr ""
+
+#: classes/controller/e2pdf-templates.php:1991
+msgid "PDF Builder"
+msgstr ""
+
+#: classes/controller/e2pdf-templates.php:1994
+#: classes/helper/e2pdf-helper.php:198 classes/model/e2pdf-loader.php:168
+#: classes/model/e2pdf-loader.php:318 classes/view/page-e2pdf-settings.php:7
+msgid "Settings"
+msgstr ""
+
+#: classes/controller/e2pdf.php:313
+msgid "Dataset removed successfully"
+msgstr ""
+
+#: classes/controller/e2pdf.php:316
+msgid "Dataset can't be removed!"
+msgstr ""
+
+#: classes/controller/e2pdf.php:349
+msgid "Datasets removed successfully"
+msgstr ""
+
+#: classes/controller/e2pdf.php:352
+msgid "Datasets can't be removed!"
+msgstr ""
+
+#: classes/controller/frontend/e2pdf-download.php:73
+msgid "Access Denied!"
+msgstr ""
+
+#: classes/extension/e2pdf-caldera.php:541
+#: classes/extension/e2pdf-formidable.php:2749
+#: classes/extension/e2pdf-forminator.php:680
+#, php-format
+msgid "Success. [e2pdf-download id=\"%s\"]"
+msgstr ""
+
+#: classes/extension/e2pdf-caldera.php:570
+#: classes/extension/e2pdf-forminator.php:519
+#: classes/extension/e2pdf-gravity.php:1254
+msgid "Text"
+msgstr ""
+
+#: classes/extension/e2pdf-caldera.php:573
+#: classes/extension/e2pdf-forminator.php:522
+#: classes/extension/e2pdf-gravity.php:1258
+#: classes/view/metaboxes/e2pdf_templates_builder.php:21
+msgid "Textarea"
+msgstr ""
+
+#: classes/extension/e2pdf-caldera.php:576
+#: classes/extension/e2pdf-forminator.php:526
+#: classes/extension/e2pdf-gravity.php:1261 classes/model/e2pdf-loader.php:324
+#: classes/view/metaboxes/e2pdf_templates_builder.php:27
+msgid "Select"
+msgstr ""
+
+#: classes/extension/e2pdf-caldera.php:603
+#: classes/extension/e2pdf-forminator.php:550
+#: classes/extension/e2pdf-gravity.php:1293
+#: classes/view/metaboxes/e2pdf_templates_builder.php:23
+msgid "Checkbox"
+msgstr ""
+
+#: classes/extension/e2pdf-caldera.php:623
+#: classes/extension/e2pdf-forminator.php:572
+#: classes/extension/e2pdf-gravity.php:1332
+#: classes/view/metaboxes/e2pdf_templates_builder.php:25
+msgid "Radio"
+msgstr ""
+
+#: classes/extension/e2pdf-caldera.php:715 classes/model/e2pdf-loader.php:255
+msgid "Submit"
+msgstr ""
+
+#: classes/extension/e2pdf-caldera.php:786
+#: classes/extension/e2pdf-divi.php:1171
+#: classes/extension/e2pdf-formidable.php:2917
+#: classes/extension/e2pdf-forminator.php:736
+#: classes/extension/e2pdf-gravity.php:1422
+msgid "Form source is empty"
+msgstr ""
+
+#: classes/extension/e2pdf-caldera.php:788
+#: classes/extension/e2pdf-divi.php:1173
+#: classes/extension/e2pdf-formidable.php:2919
+#: classes/extension/e2pdf-forminator.php:738
+#: classes/extension/e2pdf-gravity.php:1424
+msgid "Form could not be parsed due incorrect HTML"
+msgstr ""
+
+#: classes/extension/e2pdf-formidable.php:998
+#: classes/extension/e2pdf-formidable.php:1029
+msgid "Formidable Forms"
+msgstr ""
+
+#: classes/extension/e2pdf-formidable.php:1003
+msgid "Auto PDF and Visual Mapper"
+msgstr ""
+
+#: classes/extension/e2pdf-formidable.php:1009
+msgid "Use Field Keys instead Field IDs"
+msgstr ""
+
+#: classes/extension/e2pdf-formidable.php:1012
+#: classes/extension/e2pdf-wordpress.php:775
+msgid "Filter"
+msgstr ""
+
+#: classes/extension/e2pdf-formidable.php:1018
+msgid "Disable Filter"
+msgstr ""
+
+#: classes/extension/e2pdf-formidable.php:1050
+msgid "Formidable"
+msgstr ""
+
+#: classes/extension/e2pdf-formidable.php:1053
+msgid "Force shortcodes to use"
+msgstr ""
+
+#: classes/extension/e2pdf-formidable.php:1059
+#: classes/model/e2pdf-loader.php:383
+#: classes/view/metaboxes/e2pdf_templates_save.php:97
+msgid "None"
+msgstr ""
+
+#: classes/extension/e2pdf-formidable.php:1060
+msgid "Fields IDs"
+msgstr ""
+
+#: classes/extension/e2pdf-formidable.php:1061
+msgid "Field Keys"
+msgstr ""
+
+#: classes/extension/e2pdf-formidable.php:3043
+msgid "File Upload"
+msgstr ""
+
+#: classes/extension/e2pdf-forminator.php:682
+msgid "Send Message"
+msgstr ""
+
+#: classes/extension/e2pdf-forminator.php:684
+msgid "Error: Your form is not valid, please fix the errors!"
+msgstr ""
+
+#: classes/extension/e2pdf-forminator.php:714
+#: classes/extension/e2pdf-gravity.php:1403
+msgid "Form could not be found"
+msgstr ""
+
+#: classes/extension/e2pdf-gravity.php:973
+#: classes/extension/e2pdf-wordpress.php:757 classes/model/e2pdf-loader.php:388
+#: classes/view/metaboxes/e2pdf_templates_settings.php:324
+#: classes/view/metaboxes/e2pdf_templates_settings.php:332
+#: classes/view/page-e2pdf-templates.php:74
+#: classes/view/page-e2pdf-templates.php:189
+msgid "Title"
+msgstr ""
+
+#: classes/extension/e2pdf-gravity.php:999
+msgid "Caption"
+msgstr ""
+
+#: classes/extension/e2pdf-gravity.php:1025
+msgid "Description"
+msgstr ""
+
+#: classes/extension/e2pdf-gravity.php:1221
+msgid "Default Confirmation"
+msgstr ""
+
+#: classes/extension/e2pdf-gravity.php:1224
+#, php-format
+msgid "Thanks for contacting us! We will get in touch with you shortly. [e2pdf-download id=\"%s\"]"
+msgstr ""
+
+#: classes/extension/e2pdf-wordpress.php:541
+msgid "Post name"
+msgstr ""
+
+#: classes/extension/e2pdf-wordpress.php:554
+msgid "Post type"
+msgstr ""
+
+#: classes/extension/e2pdf-wordpress.php:567
+#: classes/extension/e2pdf-wordpress.php:752 classes/model/e2pdf-loader.php:354
+#: classes/view/page-e2pdf-templates.php:62
+#: classes/view/page-e2pdf-templates.php:177
+msgid "ID"
+msgstr ""
+
+#: classes/extension/e2pdf-wordpress.php:580
+#: classes/extension/e2pdf-wordpress.php:753
+#: classes/view/metaboxes/e2pdf_templates_settings.php:360
+#: classes/view/metaboxes/e2pdf_templates_settings.php:368
+msgid "Author"
+msgstr ""
+
+#: classes/extension/e2pdf-wordpress.php:607
+msgid "Created"
+msgstr ""
+
+#: classes/extension/e2pdf-wordpress.php:620
+msgid "Modified"
+msgstr ""
+
+#: classes/extension/e2pdf-wordpress.php:742
+msgid "Meta Keys"
+msgstr ""
+
+#: classes/extension/e2pdf-wordpress.php:754
+msgid "Date"
+msgstr ""
+
+#: classes/extension/e2pdf-wordpress.php:755
+msgid "Date (GMT)"
+msgstr ""
+
+#: classes/extension/e2pdf-wordpress.php:756
+msgid "Content"
+msgstr ""
+
+#: classes/extension/e2pdf-wordpress.php:758
+msgid "Excerpt"
+msgstr ""
+
+#: classes/extension/e2pdf-wordpress.php:759 classes/model/e2pdf-loader.php:389
+msgid "Status"
+msgstr ""
+
+#: classes/extension/e2pdf-wordpress.php:760
+msgid "Comment Status"
+msgstr ""
+
+#: classes/extension/e2pdf-wordpress.php:761
+msgid "Ping Status"
+msgstr ""
+
+#: classes/extension/e2pdf-wordpress.php:762
+msgid "Post Password"
+msgstr ""
+
+#: classes/extension/e2pdf-wordpress.php:763
+msgid "Post Name"
+msgstr ""
+
+#: classes/extension/e2pdf-wordpress.php:764
+msgid "To Ping"
+msgstr ""
+
+#: classes/extension/e2pdf-wordpress.php:765
+msgid "Ping"
+msgstr ""
+
+#: classes/extension/e2pdf-wordpress.php:766
+msgid "Modified Date"
+msgstr ""
+
+#: classes/extension/e2pdf-wordpress.php:767
+msgid "Modified Date (GMT)"
+msgstr ""
+
+#: classes/extension/e2pdf-wordpress.php:768
+msgid "Filtered Content"
+msgstr ""
+
+#: classes/extension/e2pdf-wordpress.php:769
+msgid "Parent ID"
+msgstr ""
+
+#: classes/extension/e2pdf-wordpress.php:770
+msgid "GUID"
+msgstr ""
+
+#: classes/extension/e2pdf-wordpress.php:771
+msgid "Menu Order"
+msgstr ""
+
+#: classes/extension/e2pdf-wordpress.php:772 classes/model/e2pdf-loader.php:297
+#: classes/view/page-e2pdf-license.php:16
+msgid "Type"
+msgstr ""
+
+#: classes/extension/e2pdf-wordpress.php:773
+msgid "Mime Type"
+msgstr ""
+
+#: classes/extension/e2pdf-wordpress.php:774
+msgid "Comments Count"
+msgstr ""
+
+#: classes/extension/e2pdf-wordpress.php:776
+msgid "Post Thumbnail"
+msgstr ""
+
+#: classes/helper/e2pdf-helper.php:190 classes/model/e2pdf-loader.php:166
+#: classes/view/page-e2pdf.php:7 classes/view/page-e2pdf.php:11
+#: classes/view/page-e2pdf.php:166
+msgid "Export"
+msgstr ""
+
+#: classes/helper/e2pdf-helper.php:194 classes/model/e2pdf-loader.php:167
+#: classes/view/page-e2pdf-license.php:51
+#: classes/view/page-e2pdf-templates.php:8
+msgid "Templates"
+msgstr ""
+
+#: classes/helper/e2pdf-helper.php:202 classes/model/e2pdf-loader.php:169
+#: classes/view/page-e2pdf-license.php:7 classes/view/page-e2pdf-license.php:11
+msgid "License"
+msgstr ""
+
+#: classes/helper/e2pdf-helper.php:206 classes/model/e2pdf-loader.php:171
+#: classes/model/e2pdf-options.php:132 classes/view/page-e2pdf-debug.php:7
+#: classes/view/page-e2pdf-debug.php:10
+msgid "Debug"
+msgstr ""
+
+#: classes/helper/e2pdf-view.php:364
+msgid "Security Issue: Nonce Incorrect"
+msgstr ""
+
+#: classes/model/e2pdf-adobesign.php:82
+msgid "Region is required"
+msgstr ""
+
+#: classes/model/e2pdf-adobesign.php:84 classes/model/e2pdf-adobesign.php:126
+msgid "Cliend ID is required"
+msgstr ""
+
+#: classes/model/e2pdf-adobesign.php:86 classes/model/e2pdf-adobesign.php:128
+msgid "Client Secret is required"
+msgstr ""
+
+#: classes/model/e2pdf-adobesign.php:122
+msgid "API Url is not set or Incorrect"
+msgstr ""
+
+#: classes/model/e2pdf-adobesign.php:124
+msgid "Code is not set or Incorrect"
+msgstr ""
+
+#: classes/model/e2pdf-adobesign.php:179
+msgid "Access Token is not set or Incorrect"
+msgstr ""
+
+#: classes/model/e2pdf-extension.php:218
+msgid "libxml is required"
+msgstr ""
+
+#: classes/model/e2pdf-extension.php:221
+msgid "DOM is required"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:252 classes/view/page-e2pdf-templates.php:31
+#: classes/view/page-e2pdf-templates.php:120
+msgid "Delete"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:253 classes/model/e2pdf-loader.php:264
+msgid "Properties"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:254 classes/view/page-e2pdf-license.php:24
+#: classes/view/page-e2pdf-license.php:32
+msgid "License Key"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:256
+msgid "Are you sure want to remove page?"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:257
+msgid "Are you sure want to remove font?"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:258
+msgid "Empty PDF"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:259
+msgid "Upload PDF"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:260
+msgid "Auto PDF"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:261
+msgid "Create PDF"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:262 classes/view/page-e2pdf-templates.php:432
+msgid "Extension"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:263
+msgid "Size"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:265
+msgid "Name"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:266
+msgid "Enter link here"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:267
+msgid "Z-index"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:268
+msgid "Border"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:269
+msgid "Background"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:270
+msgid "Left"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:271
+msgid "Right"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:272
+msgid "Top"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:273
+msgid "Center"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:274
+msgid "Bottom"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:275
+msgid "Justify"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:276 classes/view/blocks/wysiwyg.php:30
+msgid "Color"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:277
+msgid "Border Color"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:278
+#: classes/view/metaboxes/e2pdf_templates_settings.php:79
+msgid "Line Height"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:279
+msgid "Padding"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:280 classes/model/e2pdf-loader.php:300
+msgid "Width"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:281 classes/model/e2pdf-loader.php:301
+msgid "Height"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:282
+msgid "Text Color"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:283
+msgid "Value"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:284 classes/view/blocks/wysiwyg.php:85
+#: classes/view/page-e2pdf-settings.php:29
+msgid "Font"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:286
+msgid "Option"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:287
+msgid "Group"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:288
+msgid "Group Name"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:289
+msgid "Group Value"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:290
+msgid "Selector"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:291
+msgid "Check"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:292
+msgid "Circle"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:293
+msgid "Cross"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:294
+msgid "Diamond"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:295
+msgid "Square"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:296
+msgid "Star"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:298
+msgid "Scale"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:299
+msgid "Width&Height"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:302
+msgid "Choose Image"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:303
+msgid "PDF Options"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:304
+msgid "PDF Upload"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:305
+#: classes/view/metaboxes/e2pdf_templates_save.php:88
+msgid "Global Actions"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:306
+#: classes/view/metaboxes/e2pdf_templates_save.php:92
+#: classes/view/page-e2pdf-templates.php:78
+#: classes/view/page-e2pdf-templates.php:193
+#: classes/view/page-e2pdf-templates.php:444
+msgid "Item"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:307
+msgid "Position"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:308
+msgid "Copy"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:309
+msgid "Cut"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:310
+msgid "Paste"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:311
+msgid "Paste in Place"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:312 classes/view/blocks/bulk-actions.php:14
+msgid "Apply"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:313
+msgid "Dynamic Height"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:314
+msgid "Text Align"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:315
+msgid "Read-Only"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:316
+msgid "Multiline"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:317
+msgid "Required"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:319
+msgid "Relative"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:320
+msgid "Page Size"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:321
+msgid "Custom"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:322
+msgid "Size Preset"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:323
+msgid "Page Options"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:325
+msgid "Saved Template will be overwritten! Are you sure want to continue?"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:326
+msgid "All pages will be removed! Are you sure want to continue?"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:327
+msgid "Adding new pages not available in \"Uploaded PDF\""
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:328
+msgid "Dataset will be removed! Are you sure want to continue?"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:329
+msgid "All datasets will be removed! Are you sure want to continue?"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:330
+msgid "WARNING: Template has changes after last save! Changes will be lost!"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:331
+msgid "Element will be removed! Are you sure want to continue?"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:332
+msgid "Elements will be removed! Are you sure want to continue?"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:333
+msgid "Action will be removed! Are you sure want to continue?"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:334
+msgid "Condition will be removed! Are you sure want to continue?"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:335
+msgid "All Field Values will be overwritten! Are you sure want to continue?"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:336
+msgid "Website will be forced to use \"FREE\" License Key! Are you sure want to continue?"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:337
+msgid "Not Available in Revision Edit Mode"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:338
+msgid "WYSIWYG Editor is disabled for this HTML Object"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:339
+msgid "WYSIWYG can be applied only to HTML Object"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:340
+msgid "RTL"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:341
+msgid "Hide"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:342
+msgid "Show"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:343
+#: classes/view/metaboxes/e2pdf_templates_settings.php:233
+#: classes/view/metaboxes/e2pdf_templates_settings.php:241
+#: classes/view/page-e2pdf.php:108 classes/view/page-e2pdf.php:114
+msgid "Password"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:344
+msgid "Map Field"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:345
+msgid "Parent"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:347
+#: classes/view/metaboxes/e2pdf_templates_save.php:106
+#: classes/view/page-e2pdf-templates.php:157
+msgid "Activated"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:348
+#: classes/view/metaboxes/e2pdf_templates_save.php:108
+#: classes/view/page-e2pdf-templates.php:159
+msgid "Not Activated"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:349
+msgid "Page ID"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:350
+msgid "New Position"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:351
+msgid "Render New Fields"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:352
+msgid "Flush Elements"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:353
+msgid "Keep dimension"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:355
+msgid "Only 1 page allowed with \"FREE\" license type"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:356
+msgid "Last condition can't be removed"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:357
+msgid "Confirmation code"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:358 classes/model/e2pdf-options.php:243
+msgid "Code"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:359
+msgid "Visual Mapper"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:360
+msgid "Auto"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:361
+msgid "Actions"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:363
+msgid "Resize"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:364
+msgid "Horizontal align"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:365
+msgid "Vertical align"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:366
+msgid "Middle"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:367
+msgid "Apply If"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:368
+msgid "Action"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:369
+msgid "Property"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:370
+msgid "If"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:371
+msgid "Condition"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:372 classes/view/page-e2pdf-license.php:33
+msgid "Change"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:373
+msgid "Any"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:374 classes/view/blocks/sub-filters.php:9
+msgid "All"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:375
+msgid "Order"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:376
+msgid "E-signature"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:377
+msgid "Contact"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:378
+msgid "Location"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:379
+msgid "Reason"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:380
+msgid "Placeholder"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:381
+msgid "Length"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:382
+msgid "Comb"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:384
+msgid "Highlight"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:385
+msgid "Invert"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:386
+msgid "Outline"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:387
+msgid "Push"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:390
+msgid "Add Action"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:391
+#: classes/view/metaboxes/e2pdf_templates_save.php:11
+#: classes/view/page-e2pdf-templates.php:133 classes/view/page-e2pdf.php:75
+msgid "Shortcodes"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:392
+msgid "Labels"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:393
+msgid "Field Values"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:394
+msgid "Field Names"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:395
+msgid "Field Name"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:396
+msgid "As Field Name"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:397
+msgid "Confirm"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:398
+msgid "Cancel"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:399
+msgid "Hide (If Empty)"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:400
+msgid "Hide Page (If Empty)"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:401
+msgid "Preg Replace"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:402
+msgid "Pattern"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:403
+msgid "Replacement"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:404
+msgid "Replace Value"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:405
+msgid "Auto-Close"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:406
+msgid "E2Pdf License Key"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:407
+msgid "New Lines to BR"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:408
+msgid "Disable WYSIWYG Editor"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:409
+msgid "Enabling WYSIWYG can affect \"HTML\" Source"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:410
+msgid "Hidden Fields"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:411
+msgid "Access By URL"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:412
+msgid "Error Message"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:444
+#, php-format
+msgid "E2Pdf requires PHP version 5.3.3 or later. Your PHP version is %s"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:457
+msgid "Templates per page"
+msgstr ""
+
+#: classes/model/e2pdf-loader.php:541
+#, php-format
+msgid "Can't create folder %s"
+msgstr ""
+
+#: classes/model/e2pdf-notification.php:49
+#, php-format
+msgid "Your E2Pdf License Key will expire at <strong>%s</strong>. Please click <a target='_blank' href='%s'>here</a> to renew it."
+msgstr ""
+
+#: classes/model/e2pdf-notification.php:56
+#, php-format
+msgid "Your E2Pdf License Key has expired. Please click <a target='_blank' href='%s'>here</a> to renew it."
+msgstr ""
+
+#: classes/model/e2pdf-notification.php:63
+#, php-format
+msgid "You are using FREE license type. Up to 1 page and up to 1 template allowed. Please check <a target='_blank' href='%s'>%s</a> for upgrade options."
+msgstr ""
+
+#: classes/model/e2pdf-options.php:50
+msgid "Disable"
+msgstr ""
+
+#: classes/model/e2pdf-options.php:55 classes/model/e2pdf-options.php:473
+msgid "Extensions"
+msgstr ""
+
+#: classes/model/e2pdf-options.php:61
+msgid "Static"
+msgstr ""
+
+#: classes/model/e2pdf-options.php:82 classes/view/page-e2pdf-debug.php:19
+msgid "Common"
+msgstr ""
+
+#: classes/model/e2pdf-options.php:85 classes/model/e2pdf-options.php:93
+msgid "API Server"
+msgstr ""
+
+#: classes/model/e2pdf-options.php:104
+msgid "API Connection Timout"
+msgstr ""
+
+#: classes/model/e2pdf-options.php:113
+msgid "PDF Processor"
+msgstr ""
+
+#: classes/model/e2pdf-options.php:123
+msgid "Cache"
+msgstr ""
+
+#: classes/model/e2pdf-options.php:129
+msgid "Turn on Cache"
+msgstr ""
+
+#: classes/model/e2pdf-options.php:138
+msgid "Turn on Debug mode"
+msgstr ""
+
+#: classes/model/e2pdf-options.php:141 classes/model/e2pdf-options.php:147
+msgid "Hide warnings"
+msgstr ""
+
+#: classes/model/e2pdf-options.php:150
+msgid "Local Images"
+msgstr ""
+
+#: classes/model/e2pdf-options.php:156
+msgid "Load via Remote Request"
+msgstr ""
+
+#: classes/model/e2pdf-options.php:159
+msgid "Images Timout"
+msgstr ""
+
+#: classes/model/e2pdf-options.php:168
+msgid "Revisions Limit"
+msgstr ""
+
+#: classes/model/e2pdf-options.php:177
+msgid "Memory/Time Usage"
+msgstr ""
+
+#: classes/model/e2pdf-options.php:183
+msgid "Show Memory/Time Usage"
+msgstr ""
+
+#: classes/model/e2pdf-options.php:186
+msgid "Developer Mode"
+msgstr ""
+
+#: classes/model/e2pdf-options.php:192
+msgid "Turn on Developer mode"
+msgstr ""
+
+#: classes/model/e2pdf-options.php:195 classes/model/e2pdf-options.php:200
+msgid "Developer IPs"
+msgstr ""
+
+#: classes/model/e2pdf-options.php:205
+msgid "Permissions"
+msgstr ""
+
+#: classes/model/e2pdf-options.php:210
+msgid "Fonts"
+msgstr ""
+
+#: classes/model/e2pdf-options.php:215
+msgid "Adobe Sign"
+msgstr ""
+
+#: classes/model/e2pdf-options.php:219
+msgid "Client ID"
+msgstr ""
+
+#: classes/model/e2pdf-options.php:227
+msgid "Client Secret"
+msgstr ""
+
+#: classes/model/e2pdf-options.php:235
+msgid "Region"
+msgstr ""
+
+#: classes/model/e2pdf-options.php:240
+msgid "na2"
+msgstr ""
+
+#: classes/model/e2pdf-options.php:251
+msgid "Api Access Point"
+msgstr ""
+
+#: classes/model/e2pdf-options.php:259
+msgid "Refresh Token"
+msgstr ""
+
+#: classes/model/e2pdf-options.php:267
+msgid "Access Token"
+msgstr ""
+
+#: classes/model/e2pdf-options.php:275
+msgid "Scopes"
+msgstr ""
+
+#: classes/model/e2pdf-options.php:276
+msgid "user_read"
+msgstr ""
+
+#: classes/model/e2pdf-options.php:282 classes/model/e2pdf-options.php:295
+#: classes/model/e2pdf-options.php:308 classes/model/e2pdf-options.php:321
+#: classes/model/e2pdf-options.php:334 classes/model/e2pdf-options.php:347
+#: classes/model/e2pdf-options.php:360 classes/model/e2pdf-options.php:373
+#: classes/model/e2pdf-options.php:386 classes/model/e2pdf-options.php:399
+#: classes/model/e2pdf-options.php:412 classes/model/e2pdf-options.php:425
+#: classes/model/e2pdf-options.php:438 classes/model/e2pdf-options.php:451
+#: classes/model/e2pdf-options.php:464
+msgid "disabled"
+msgstr ""
+
+#: classes/model/e2pdf-options.php:289
+msgid "user_write"
+msgstr ""
+
+#: classes/model/e2pdf-options.php:302
+msgid "user_login"
+msgstr ""
+
+#: classes/model/e2pdf-options.php:315
+msgid "agreement_read"
+msgstr ""
+
+#: classes/model/e2pdf-options.php:328
+msgid "agreement_write"
+msgstr ""
+
+#: classes/model/e2pdf-options.php:341
+msgid "agreement_send"
+msgstr ""
+
+#: classes/model/e2pdf-options.php:354
+msgid "widget_read"
+msgstr ""
+
+#: classes/model/e2pdf-options.php:367
+msgid "widget_write"
+msgstr ""
+
+#: classes/model/e2pdf-options.php:380
+msgid "library_read"
+msgstr ""
+
+#: classes/model/e2pdf-options.php:393
+msgid "library_write"
+msgstr ""
+
+#: classes/model/e2pdf-options.php:406
+msgid "workflow_read"
+msgstr ""
+
+#: classes/model/e2pdf-options.php:419
+msgid "workflow_write"
+msgstr ""
+
+#: classes/model/e2pdf-options.php:432
+msgid "webhook_read"
+msgstr ""
+
+#: classes/model/e2pdf-options.php:445
+msgid "webhook_write"
+msgstr ""
+
+#: classes/model/e2pdf-options.php:458
+msgid "webhook_retention"
+msgstr ""
+
+#: classes/model/e2pdf-shortcode.php:306 classes/model/e2pdf-shortcode.php:409
+#: classes/view/page-e2pdf-templates.php:505
+msgid "Download"
+msgstr ""
+
+#: classes/model/e2pdf-template.php:145
+msgid "Latest"
+msgstr ""
+
+#: classes/view/blocks/bottom-panel.php:8
+msgid "Delete All Pages"
+msgstr ""
+
+#: classes/view/blocks/bottom-panel.php:12
+msgid "Zoom"
+msgstr ""
+
+#: classes/view/blocks/bulk-actions.php:7
+msgid "Select bulk action"
+msgstr ""
+
+#: classes/view/blocks/bulk-actions.php:9
+msgid "Bulk Actions"
+msgstr ""
+
+#: classes/view/blocks/debug-panel.php:8
+msgid "Load Time"
+msgstr ""
+
+#: classes/view/blocks/debug-panel.php:8
+msgid "Total Memory Usage"
+msgstr ""
+
+#: classes/view/blocks/debug-panel.php:8
+msgid "E2pdf Memory Usage"
+msgstr ""
+
+#: classes/view/blocks/pagination.php:7
+#, php-format
+msgid "%s item"
+msgstr ""
+
+#: classes/view/blocks/pagination.php:7
+#, php-format
+msgid "%s items"
+msgstr ""
+
+#: classes/view/blocks/pagination.php:10
+msgid "First page"
+msgstr ""
+
+#: classes/view/blocks/pagination.php:16
+msgid "Prev page"
+msgstr ""
+
+#: classes/view/blocks/pagination.php:20
+msgid "Current Page"
+msgstr ""
+
+#: classes/view/blocks/pagination.php:22
+#, php-format
+msgid "%d of <span class=\"total-pages\">%d</span>"
+msgstr ""
+
+#: classes/view/blocks/pagination.php:25
+msgid "Next page"
+msgstr ""
+
+#: classes/view/blocks/pagination.php:31
+msgid "Last page"
+msgstr ""
+
+#: classes/view/blocks/sub-filters.php:14
+msgid "Trash"
+msgstr ""
+
+#: classes/view/blocks/wysiwyg.php:8
+msgid "Hide Controls"
+msgstr ""
+
+#: classes/view/blocks/wysiwyg.php:11
+msgid "Hide/Show Hidden Elements"
+msgstr ""
+
+#: classes/view/blocks/wysiwyg.php:16
+msgid "New Page"
+msgstr ""
+
+#: classes/view/blocks/wysiwyg.php:21
+msgid "Undo"
+msgstr ""
+
+#: classes/view/blocks/wysiwyg.php:23
+msgid "Redo"
+msgstr ""
+
+#: classes/view/blocks/wysiwyg.php:25
+msgid "Clear Style"
+msgstr ""
+
+#: classes/view/blocks/wysiwyg.php:36
+msgid "Bold"
+msgstr ""
+
+#: classes/view/blocks/wysiwyg.php:38
+msgid "Italic"
+msgstr ""
+
+#: classes/view/blocks/wysiwyg.php:40
+msgid "Underline"
+msgstr ""
+
+#: classes/view/blocks/wysiwyg.php:42
+msgid "Strike Through"
+msgstr ""
+
+#: classes/view/blocks/wysiwyg.php:46
+msgid "Align Left"
+msgstr ""
+
+#: classes/view/blocks/wysiwyg.php:48
+msgid "Align Center"
+msgstr ""
+
+#: classes/view/blocks/wysiwyg.php:50
+msgid "Align Right"
+msgstr ""
+
+#: classes/view/blocks/wysiwyg.php:55
+msgid "Unordered List"
+msgstr ""
+
+#: classes/view/blocks/wysiwyg.php:57
+msgid "Ordered List"
+msgstr ""
+
+#: classes/view/blocks/wysiwyg.php:60
+msgid "Heading H1"
+msgstr ""
+
+#: classes/view/blocks/wysiwyg.php:62
+msgid "Heading H2"
+msgstr ""
+
+#: classes/view/blocks/wysiwyg.php:65
+#: classes/view/metaboxes/e2pdf_templates_builder.php:47
+msgid "Link"
+msgstr ""
+
+#: classes/view/blocks/wysiwyg.php:67 classes/view/page-e2pdf-license.php:39
+msgid "Unlink"
+msgstr ""
+
+#: classes/view/blocks/wysiwyg.php:72
+msgid "Font size"
+msgstr ""
+
+#: classes/view/metaboxes/e2pdf_templates_builder.php:8
+#: classes/view/metaboxes/e2pdf_templates_builder.php:14
+msgid "Fields"
+msgstr ""
+
+#: classes/view/metaboxes/e2pdf_templates_builder.php:9
+#: classes/view/metaboxes/e2pdf_templates_builder.php:38
+msgid "Objects"
+msgstr ""
+
+#: classes/view/metaboxes/e2pdf_templates_builder.php:19
+msgid "Input"
+msgstr ""
+
+#: classes/view/metaboxes/e2pdf_templates_builder.php:29
+msgid "Signature"
+msgstr ""
+
+#: classes/view/metaboxes/e2pdf_templates_builder.php:41
+msgid "Html"
+msgstr ""
+
+#: classes/view/metaboxes/e2pdf_templates_builder.php:43
+msgid "Image"
+msgstr ""
+
+#: classes/view/metaboxes/e2pdf_templates_builder.php:45
+msgid "Rectangle"
+msgstr ""
+
+#: classes/view/metaboxes/e2pdf_templates_save.php:15
+#: classes/view/metaboxes/e2pdf_templates_save.php:18
+#: classes/view/metaboxes/e2pdf_templates_save.php:21
+#: classes/view/metaboxes/e2pdf_templates_save.php:24
+#: classes/view/page-e2pdf-templates.php:79
+#: classes/view/page-e2pdf-templates.php:136
+#: classes/view/page-e2pdf-templates.php:139
+#: classes/view/page-e2pdf-templates.php:142
+#: classes/view/page-e2pdf-templates.php:145
+#: classes/view/page-e2pdf-templates.php:194
+msgid "Shortcode"
+msgstr ""
+
+#: classes/view/metaboxes/e2pdf_templates_save.php:39
+msgid "Preview"
+msgstr ""
+
+#: classes/view/metaboxes/e2pdf_templates_save.php:49
+msgid "Download Original PDF"
+msgstr ""
+
+#: classes/view/metaboxes/e2pdf_templates_save.php:50
+msgid "Replace PDF"
+msgstr ""
+
+#: classes/view/metaboxes/e2pdf_templates_save.php:54
+msgid "View Saved"
+msgstr ""
+
+#: classes/view/metaboxes/e2pdf_templates_save.php:66
+msgid "Revision"
+msgstr ""
+
+#: classes/view/metaboxes/e2pdf_templates_save.php:67
+#, php-format
+msgid "Revisions Limit: %s"
+msgstr ""
+
+#: classes/view/metaboxes/e2pdf_templates_save.php:103
+#: classes/view/page-e2pdf-templates.php:93
+#: classes/view/page-e2pdf-templates.php:208
+msgid "Activation"
+msgstr ""
+
+#: classes/view/metaboxes/e2pdf_templates_save.php:118
+msgid "PHP"
+msgstr ""
+
+#: classes/view/metaboxes/e2pdf_templates_save.php:130
+#: classes/view/page-e2pdf-templates.php:39
+#: classes/view/page-e2pdf-templates.php:228
+msgid "Move To Trash"
+msgstr ""
+
+#: classes/view/metaboxes/e2pdf_templates_save.php:137
+#: classes/view/page-e2pdf-templates.php:30
+#: classes/view/page-e2pdf-templates.php:115
+msgid "Restore"
+msgstr ""
+
+#: classes/view/metaboxes/e2pdf_templates_save.php:139
+msgid "Update"
+msgstr ""
+
+#: classes/view/metaboxes/e2pdf_templates_settings.php:9
+msgid "Style"
+msgstr ""
+
+#: classes/view/metaboxes/e2pdf_templates_settings.php:10
+#: classes/view/page-e2pdf-templates.php:347
+#: classes/view/page-e2pdf-templates.php:439
+msgid "Template"
+msgstr ""
+
+#: classes/view/metaboxes/e2pdf_templates_settings.php:11
+msgid "Pdf"
+msgstr ""
+
+#: classes/view/metaboxes/e2pdf_templates_settings.php:12
+msgid "Meta"
+msgstr ""
+
+#: classes/view/metaboxes/e2pdf_templates_settings.php:21
+msgid "Enter your E-mail to unlock this features"
+msgstr ""
+
+#: classes/view/metaboxes/e2pdf_templates_settings.php:28
+msgid "E-mail"
+msgstr ""
+
+#: classes/view/metaboxes/e2pdf_templates_settings.php:36
+msgid "Unlock"
+msgstr ""
+
+#: classes/view/metaboxes/e2pdf_templates_settings.php:45
+msgid "Global Font"
+msgstr ""
+
+#: classes/view/metaboxes/e2pdf_templates_settings.php:98
+msgid "Font Color"
+msgstr ""
+
+#: classes/view/metaboxes/e2pdf_templates_settings.php:121
+#: classes/view/metaboxes/e2pdf_templates_settings.php:129
+msgid "Dataset Title"
+msgstr ""
+
+#: classes/view/metaboxes/e2pdf_templates_settings.php:139
+#: classes/view/metaboxes/e2pdf_templates_settings.php:147
+msgid "Button Title"
+msgstr ""
+
+#: classes/view/metaboxes/e2pdf_templates_settings.php:157
+msgid "Format"
+msgstr ""
+
+#: classes/view/metaboxes/e2pdf_templates_settings.php:181
+msgid "Inline"
+msgstr ""
+
+#: classes/view/metaboxes/e2pdf_templates_settings.php:197
+msgid "Auto download"
+msgstr ""
+
+#: classes/view/metaboxes/e2pdf_templates_settings.php:215
+#: classes/view/metaboxes/e2pdf_templates_settings.php:223
+#: classes/view/page-e2pdf.php:89 classes/view/page-e2pdf.php:95
+msgid "PDF Name"
+msgstr ""
+
+#: classes/view/metaboxes/e2pdf_templates_settings.php:251
+#: classes/view/page-e2pdf.php:143
+msgid "Flatten"
+msgstr ""
+
+#: classes/view/metaboxes/e2pdf_templates_settings.php:277
+msgid "Generate appearance"
+msgstr ""
+
+#: classes/view/metaboxes/e2pdf_templates_settings.php:289
+msgid "Compression"
+msgstr ""
+
+#: classes/view/metaboxes/e2pdf_templates_settings.php:302
+msgid "Default"
+msgstr ""
+
+#: classes/view/metaboxes/e2pdf_templates_settings.php:342
+#: classes/view/metaboxes/e2pdf_templates_settings.php:350
+msgid "Subject"
+msgstr ""
+
+#: classes/view/metaboxes/e2pdf_templates_settings.php:378
+#: classes/view/metaboxes/e2pdf_templates_settings.php:386
+msgid "Keywords"
+msgstr ""
+
+#: classes/view/page-e2pdf-debug.php:11
+msgid "DB"
+msgstr ""
+
+#: classes/view/page-e2pdf-debug.php:12
+msgid "PHP Info"
+msgstr ""
+
+#: classes/view/page-e2pdf-debug.php:13
+msgid "Requests"
+msgstr ""
+
+#: classes/view/page-e2pdf-debug.php:20
+msgid "Domain"
+msgstr ""
+
+#: classes/view/page-e2pdf-debug.php:21
+msgid "PHP Version"
+msgstr ""
+
+#: classes/view/page-e2pdf-debug.php:22
+msgid "WP Version"
+msgstr ""
+
+#: classes/view/page-e2pdf-debug.php:23
+msgid "Multisite"
+msgstr ""
+
+#: classes/view/page-e2pdf-debug.php:23 classes/view/page-e2pdf-debug.php:24
+#: classes/view/page-e2pdf.php:154
+msgid "Yes"
+msgstr ""
+
+#: classes/view/page-e2pdf-debug.php:23 classes/view/page-e2pdf-debug.php:24
+#: classes/view/page-e2pdf.php:153
+msgid "No"
+msgstr ""
+
+#: classes/view/page-e2pdf-debug.php:24
+msgid "Is Main Site"
+msgstr ""
+
+#: classes/view/page-e2pdf-debug.php:25
+msgid "Folders"
+msgstr ""
+
+#: classes/view/page-e2pdf-debug.php:26
+msgid "WP Folder"
+msgstr ""
+
+#: classes/view/page-e2pdf-debug.php:28
+msgid "Plugin Folrder"
+msgstr ""
+
+#: classes/view/page-e2pdf-debug.php:30
+msgid "Folders permission"
+msgstr ""
+
+#: classes/view/page-e2pdf-debug.php:33
+msgid "PHP Extensions"
+msgstr ""
+
+#: classes/view/page-e2pdf-debug.php:34
+msgid "CURL"
+msgstr ""
+
+#: classes/view/page-e2pdf-debug.php:35
+msgid "SIMPLEXML"
+msgstr ""
+
+#: classes/view/page-e2pdf-debug.php:36
+msgid "LIBXML"
+msgstr ""
+
+#: classes/view/page-e2pdf-debug.php:37
+msgid "DOM"
+msgstr ""
+
+#: classes/view/page-e2pdf-debug.php:39
+msgid "Plugins"
+msgstr ""
+
+#: classes/view/page-e2pdf-license.php:46
+msgid "Sites"
+msgstr ""
+
+#: classes/view/page-e2pdf-license.php:57
+msgid "Expire Date"
+msgstr ""
+
+#: classes/view/page-e2pdf-settings.php:27
+msgid "Upload Font"
+msgstr ""
+
+#: classes/view/page-e2pdf-settings.php:32
+#: classes/view/page-e2pdf-templates.php:349
+msgid "Allowed filetypes"
+msgstr ""
+
+#: classes/view/page-e2pdf-settings.php:33
+#: classes/view/page-e2pdf-templates.php:350
+msgid "Max upload filesize"
+msgstr ""
+
+#: classes/view/page-e2pdf-settings.php:38
+msgid "Upload"
+msgstr ""
+
+#: classes/view/page-e2pdf-settings.php:47
+msgid "Available Fonts"
+msgstr ""
+
+#: classes/view/page-e2pdf-templates.php:10
+#: classes/view/page-e2pdf-templates.php:100
+#: classes/view/page-e2pdf-templates.php:249
+msgid "Add new"
+msgstr ""
+
+#: classes/view/page-e2pdf-templates.php:19
+#: classes/view/page-e2pdf-templates.php:21
+msgid "Search Templates"
+msgstr ""
+
+#: classes/view/page-e2pdf-templates.php:40
+#: classes/view/page-e2pdf-templates.php:229
+msgid "Activate"
+msgstr ""
+
+#: classes/view/page-e2pdf-templates.php:41
+#: classes/view/page-e2pdf-templates.php:230
+msgid "Deactivate"
+msgstr ""
+
+#: classes/view/page-e2pdf-templates.php:47
+#: classes/view/page-e2pdf-templates.php:340
+#: classes/view/page-e2pdf-templates.php:420
+msgid "Import"
+msgstr ""
+
+#: classes/view/page-e2pdf-templates.php:53
+#: classes/view/page-e2pdf-templates.php:168
+msgid "Select All"
+msgstr ""
+
+#: classes/view/page-e2pdf-templates.php:88
+#: classes/view/page-e2pdf-templates.php:150
+#: classes/view/page-e2pdf-templates.php:203
+msgid "Updated"
+msgstr ""
+
+#: classes/view/page-e2pdf-templates.php:100
+msgid "No Templates Found"
+msgstr ""
+
+#: classes/view/page-e2pdf-templates.php:116
+msgid "Delete permanently?"
+msgstr ""
+
+#: classes/view/page-e2pdf-templates.php:116
+msgid "DELETE"
+msgstr ""
+
+#: classes/view/page-e2pdf-templates.php:118
+msgid "Edit"
+msgstr ""
+
+#: classes/view/page-e2pdf-templates.php:119
+msgid "Duplicate"
+msgstr ""
+
+#: classes/view/page-e2pdf-templates.php:121
+msgid "View"
+msgstr ""
+
+#: classes/view/page-e2pdf-templates.php:122
+#: classes/view/page-e2pdf-templates.php:424
+msgid "Backup"
+msgstr ""
+
+#: classes/view/page-e2pdf-templates.php:125
+msgid "Show more details"
+msgstr ""
+
+#: classes/view/page-e2pdf-templates.php:247 classes/view/page-e2pdf.php:69
+msgid "Edit Template"
+msgstr ""
+
+#: classes/view/page-e2pdf-templates.php:247
+msgid "New Template"
+msgstr ""
+
+#: classes/view/page-e2pdf-templates.php:283
+msgid "Template Title"
+msgstr ""
+
+#: classes/view/page-e2pdf.php:20
+msgid "Select Template to use"
+msgstr ""
+
+#: classes/view/page-e2pdf.php:37
+msgid "Select Dataset to export"
+msgstr ""
+
+#: classes/view/page-e2pdf.php:66
+msgid "Delete Dataset"
+msgstr ""
+
+#: classes/view/page-e2pdf.php:67
+msgid "Delete All Datasets"
+msgstr ""
+
+#: classes/view/page-e2pdf.php:68
+msgid "View Dataset"
+msgstr ""
+
+#: classes/view/page-e2pdf.php:78
+msgid "Shortcode for Download Link with dynamic dataset"
+msgstr ""
+
+#: classes/view/page-e2pdf.php:82
+msgid "Shortcode for Download Link with current dataset"
+msgstr ""
+
+#: classes/view/page-e2pdf.php:126
+msgid "User"
+msgstr ""
+
+#: classes/view/page-e2pdf.php:155
+msgid "Full"
+msgstr ""

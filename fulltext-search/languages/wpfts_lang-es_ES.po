@@ -1,0 +1,572 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Wordpress Fulltext Search v5.3.21\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2015-08-08 16:24:38+0000\n"
+"Last-Translator: epsilonadmin <epsil_on@mail.ru>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: Spanish\n"
+"X-Poedit-Country: SPAIN\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: includes/templates/admin_header.php:3
+#@ wpfts_lang
+msgid "WP FullText Search Options"
+msgstr ""
+
+#: includes/templates/admin_options.php:7
+#: wordpress_fulltext_search.php:201
+#@ wpfts_lang
+msgid "Main Configuration"
+msgstr ""
+
+#: includes/templates/admin_options.php:8
+#: wordpress_fulltext_search.php:218
+#@ wpfts_lang
+msgid "Indexing Engine Settings"
+msgstr ""
+
+#: includes/templates/admin_options.php:9
+#: wordpress_fulltext_search.php:226
+#@ wpfts_lang
+msgid "Sandbox Area"
+msgstr ""
+
+#: includes/templates/admin_options.php:37
+#@ wpfts_lang
+msgid "Save Changes"
+msgstr ""
+
+#: includes/templates/admin_options.php:61
+#@ wpfts_lang
+msgid "Changing of Indexing Engine Settings will automatically rebuild the search index. This operation could take some time. Are you sure?"
+msgstr ""
+
+#: includes/templates/admin_options.php:61
+#@ wpfts_lang
+msgid "Save Changes and Rebuild Index"
+msgstr ""
+
+#: includes/wpfts_core.php:48
+#@ wpfts_lang
+msgid "Error: "
+msgstr ""
+
+#: includes/wpfts_core.php:68
+#@ wpfts_lang
+msgid "<b style=\"color: red;\">Congratulations!</b> Wordpress FullText Search plugin was just installed and activated successfully!<br>In order to complete activation, we need to create an index of your existing WP post data. To run this process, just go to <a href=\"/wp-admin/options-general.php?page=wpfts-options\">WPFTS Settings Page</a>"
+msgstr ""
+
+#: includes/wpfts_core.php:72
+#@ wpfts_lang
+msgid "WPFTS plugin can not create some DB tables."
+msgstr ""
+
+#: includes/wpfts_core.php:386
+#, php-format
+#@ wpfts_lang
+msgid "%s posts has been rebuilt"
+msgstr ""
+
+#: includes/wpfts_core.php:467
+#, php-format
+#@ wpfts_lang
+msgid "The weight value of cluster \"%s\" should be numeric value from 0.0 to 1.0"
+msgstr ""
+
+#: includes/wpfts_core.php:494
+#: includes/wpfts_core.php:576
+#: includes/wpfts_core.php:624
+#: includes/wpfts_core.php:726
+#@ wpfts_lang
+msgid "There are errors"
+msgstr ""
+
+#: includes/wpfts_core.php:506
+#: includes/wpfts_core.php:590
+#: includes/wpfts_core.php:689
+#: includes/wpfts_core.php:855
+#: includes/wpfts_core.php:876
+#@ wpfts_lang
+msgid "The form is outdated. Please refresh the page and try again."
+msgstr ""
+
+#: includes/wpfts_core.php:548
+#@ wpfts_lang
+msgid "Maximum Word Frequency should be an integer number from 0 to 100"
+msgstr ""
+
+#: includes/wpfts_core.php:556
+#@ wpfts_lang
+msgid "Minimum Word Length should be an integer number from 0 to 50"
+msgstr ""
+
+#: includes/wpfts_core.php:612
+#@ wpfts_lang
+msgid "Please specify post ID"
+msgstr ""
+
+#: includes/wpfts_core.php:615
+#@ wpfts_lang
+msgid "Please specify a number"
+msgstr ""
+
+#: includes/wpfts_core.php:629
+#, php-format
+#@ wpfts_lang
+msgid "Results of Pre-indexing Filter Tester for Post ID = %s"
+msgstr ""
+
+#: includes/wpfts_core.php:649
+#@ wpfts_lang
+msgid "Token"
+msgstr ""
+
+#: includes/wpfts_core.php:650
+#@ wpfts_lang
+msgid "Content"
+msgstr ""
+
+#: includes/wpfts_core.php:670
+#, php-format
+#@ wpfts_lang
+msgid "Filter result is not array. Please read <a href=\"%s\" target=\"_blank\">documentation</a> to fix this error."
+msgstr ""
+
+#: includes/wpfts_core.php:675
+#@ wpfts_lang
+msgid "The post with specified ID is not found."
+msgstr ""
+
+#: includes/wpfts_core.php:718
+#@ wpfts_lang
+msgid "Please specify search query"
+msgstr ""
+
+#: includes/wpfts_core.php:731
+#, php-format
+#@ wpfts_lang
+msgid "Results of search for query = \"%s\""
+msgstr ""
+
+#: includes/wpfts_core.php:758
+#@ wpfts_lang
+msgid "Time spent: <b>%.3f</b> sec"
+msgstr ""
+
+#: includes/wpfts_core.php:806
+#@ wpfts_lang
+msgid "#"
+msgstr ""
+
+#: includes/wpfts_core.php:807
+#@ wpfts_lang
+msgid "ID"
+msgstr ""
+
+#: includes/wpfts_core.php:808
+#@ wpfts_lang
+msgid "Type"
+msgstr ""
+
+#: includes/wpfts_core.php:809
+#@ wpfts_lang
+msgid "Status"
+msgstr ""
+
+#: includes/wpfts_core.php:810
+#@ wpfts_lang
+msgid "Title, Thumbnail, Excerpt"
+msgstr ""
+
+#: includes/wpfts_core.php:811
+#@ wpfts_lang
+msgid "Relevance"
+msgstr ""
+
+#: includes/wpfts_core.php:838
+#, php-format
+#@ wpfts_lang
+msgid "Found: <b>%d</b> posts"
+msgstr ""
+
+#: includes/wpfts_core.php:893
+#@ wpfts_lang
+msgid "posts per page"
+msgstr ""
+
+#: includes/wpfts_core.php:904
+#, php-format
+#@ wpfts_lang
+msgid "Shown <span>%1s</span> from <b>%2s</b>"
+msgstr ""
+
+#: includes/wpfts_output.php:20
+#@ wpfts_lang
+msgid "Disabled"
+msgstr ""
+
+#: includes/wpfts_output.php:23
+#@ wpfts_lang
+msgid "Active"
+msgstr ""
+
+#: includes/wpfts_output.php:25
+#@ wpfts_lang
+msgid "Awaiting"
+msgstr ""
+
+#: includes/wpfts_output.php:30
+#@ wpfts_lang
+msgid "In Index"
+msgstr ""
+
+#: includes/wpfts_output.php:30
+#: includes/wpfts_output.php:39
+#: includes/wpfts_output.php:40
+#@ wpfts_lang
+msgid "posts"
+msgstr ""
+
+#: includes/wpfts_output.php:38
+#: includes/wpfts_output.php:42
+#@ wpfts_lang
+msgid "Indexing is in progress"
+msgstr ""
+
+#: includes/wpfts_output.php:39
+#@ wpfts_lang
+msgid "Actual"
+msgstr ""
+
+#: includes/wpfts_output.php:40
+#@ wpfts_lang
+msgid "Pending"
+msgstr ""
+
+#: includes/wpfts_output.php:43
+#@ wpfts_lang
+msgid "Est. time left: "
+msgstr ""
+
+#: includes/wpfts_output.php:46
+#@ wpfts_lang
+msgid "In the process of indexing your site might run slower. Please do not worry and wait until index finishing."
+msgstr ""
+
+#: includes/wpfts_output.php:49
+#@ wpfts_lang
+msgid "Index is OK"
+msgstr ""
+
+#: includes/wpfts_output.php:52
+#@ wpfts_lang
+msgid "Indexing is disabled"
+msgstr ""
+
+#: includes/wpfts_output.php:68
+#@ wpfts_lang
+msgid "WPFTS Home"
+msgstr ""
+
+#: includes/wpfts_output.php:69
+#@ wpfts_lang
+msgid "WPFTS Documentation"
+msgstr ""
+
+#: includes/wpfts_output.php:82
+#@ wpfts_lang
+msgid "Enable FullText Search"
+msgstr ""
+
+#: includes/wpfts_output.php:86
+#: includes/wpfts_output.php:99
+#@ wpfts_lang
+msgid "Enabled"
+msgstr ""
+
+#: includes/wpfts_output.php:91
+#@ wpfts_lang
+msgid "(If not enabled, regular integrated \"not indexed\" WordPress search will be used)"
+msgstr ""
+
+#: includes/wpfts_output.php:95
+#@ wpfts_lang
+msgid "Auto-index"
+msgstr ""
+
+#: includes/wpfts_output.php:104
+#@ wpfts_lang
+msgid "(Normally, WP FullText Search will autoindex any new post or post changes even if you disabled previous option. Disabling this option will completely stop all plugin functions. However, you probably have to do a full index rebuild, if you activate the plugin again.)"
+msgstr ""
+
+#: includes/wpfts_output.php:105
+#@ wpfts_lang
+msgid "<strong>NOTE</strong>: Disabling this option is NOT recommended!"
+msgstr ""
+
+#: includes/wpfts_output.php:112
+#@ wpfts_lang
+msgid "The action will rebuild the search index, which could take some time. Are you sure?"
+msgstr ""
+
+#: includes/wpfts_output.php:112
+#@ wpfts_lang
+msgid "Rebuild Index"
+msgstr ""
+
+#: includes/wpfts_output.php:113
+#@ wpfts_lang
+msgid "Resetting"
+msgstr ""
+
+#: includes/wpfts_output.php:117
+#, php-format
+#@ wpfts_lang
+msgid "(Use this button when you need to completely rebuild search index database, for example, when you changed custom <b>wpfts_index_post</b> filter function. Remember that this operation could take a long time. Please refer for <a href=\"%s\" target=\"_blank\">documentation</a> for more information.)"
+msgstr ""
+
+#: includes/wpfts_output.php:140
+#@ wpfts_lang
+msgid "Default Search Logic"
+msgstr ""
+
+#: includes/wpfts_output.php:149
+#@ wpfts_lang
+msgid "(This option tells the search engine whether all query words should contain in the found post (AND) or any of these words (OR).)"
+msgstr ""
+
+#: includes/wpfts_output.php:153
+#@ wpfts_lang
+msgid "Cluster Weights"
+msgstr ""
+
+#: includes/wpfts_output.php:168
+#@ wpfts_lang
+msgid "(`Cluster` is a part of post (either title, content or even specific part which you can define using <b>wpfts_index_post</b> filter). You can assign some relevance weight to each of them)"
+msgstr ""
+
+#: includes/wpfts_output.php:188
+#@ wpfts_lang
+msgid "Minimum Word Length"
+msgstr ""
+
+#: includes/wpfts_output.php:194
+#@ wpfts_lang
+msgid "characters"
+msgstr ""
+
+#: includes/wpfts_output.php:198
+#, php-format
+#@ wpfts_lang
+msgid "(Consider any word shorter than specified number of characters as a <a data-hint=\"%1s\" href=\"%2s\" target=\"_blank\">stop word</a>.)"
+msgstr ""
+
+#: includes/wpfts_output.php:198
+#@ wpfts_lang
+msgid "<b>Stop Word</b> is a word which is not indexing and can not be used to search for."
+msgstr ""
+
+#: includes/wpfts_output.php:202
+#@ wpfts_lang
+msgid "Maximum Word Frequency"
+msgstr ""
+
+#: includes/wpfts_output.php:212
+#@ wpfts_lang
+msgid "(Consider a word that is found in the specified or more amount of documents as a stop word.)"
+msgstr ""
+
+#: includes/wpfts_output.php:216
+#@ wpfts_lang
+msgid "Stop Words"
+msgstr ""
+
+#: includes/wpfts_output.php:218
+#@ wpfts_lang
+msgid "A comma-separated list of custom stop words"
+msgstr ""
+
+#: includes/wpfts_output.php:222
+#@ wpfts_lang
+msgid "the, a, an, ...etc"
+msgstr ""
+
+#: includes/wpfts_output.php:266
+#: includes/wpfts_output.php:280
+#@ wpfts_lang
+msgid "* (Any)"
+msgstr ""
+
+#: includes/wpfts_output.php:267
+#@ wpfts_lang
+msgid "publish (Published)"
+msgstr ""
+
+#: includes/wpfts_output.php:268
+#@ wpfts_lang
+msgid "future (Future)"
+msgstr ""
+
+#: includes/wpfts_output.php:269
+#@ wpfts_lang
+msgid "draft (Draft)"
+msgstr ""
+
+#: includes/wpfts_output.php:270
+#@ wpfts_lang
+msgid "pending (Pending)"
+msgstr ""
+
+#: includes/wpfts_output.php:271
+#@ wpfts_lang
+msgid "private (Private)"
+msgstr ""
+
+#: includes/wpfts_output.php:272
+#@ wpfts_lang
+msgid "trash (Trash)"
+msgstr ""
+
+#: includes/wpfts_output.php:273
+#@ wpfts_lang
+msgid "auto-draft (Auto-Draft)"
+msgstr ""
+
+#: includes/wpfts_output.php:274
+#@ wpfts_lang
+msgid "inherit (Inherit)"
+msgstr ""
+
+#: includes/wpfts_output.php:289
+#@ wpfts_lang
+msgid "Pre-indexing Filter Tester"
+msgstr ""
+
+#: includes/wpfts_output.php:292
+#@ wpfts_lang
+msgid "You can test your own <b>wpfts_index_post</b> filter here. Just enter an ID of a post you want and press Test Filter button."
+msgstr ""
+
+#: includes/wpfts_output.php:294
+#@ wpfts_lang
+msgid "Post ID:"
+msgstr ""
+
+#: includes/wpfts_output.php:299
+#@ wpfts_lang
+msgid "Test Filter"
+msgstr ""
+
+#: includes/wpfts_output.php:306
+#@ wpfts_lang
+msgid "Search Tester"
+msgstr ""
+
+#: includes/wpfts_output.php:309
+#@ wpfts_lang
+msgid "You can test search with any query here. Standard wordpress <b>WP_Query</b> object with WPFTS features will be used."
+msgstr ""
+
+#: includes/wpfts_output.php:311
+#@ wpfts_lang
+msgid "Query:"
+msgstr ""
+
+#: includes/wpfts_output.php:316
+#@ wpfts_lang
+msgid "Test Search"
+msgstr ""
+
+#: includes/wpfts_output.php:321
+#@ wpfts_lang
+msgid "Additional Options:"
+msgstr ""
+
+#: includes/wpfts_output.php:324
+#@ wpfts_lang
+msgid "Disable WPFTS"
+msgstr ""
+
+#: includes/wpfts_output.php:327
+#@ wpfts_lang
+msgid "Disable SQL cache"
+msgstr ""
+
+#: includes/wpfts_output.php:332
+#@ wpfts_lang
+msgid "Post Type:"
+msgstr ""
+
+#: includes/wpfts_output.php:336
+#@ wpfts_lang
+msgid "Post Status:"
+msgstr ""
+
+#. translators: plugin header field 'Name'
+#: wordpress_fulltext_search.php:0
+#@ wpfts_lang
+msgid "Wordpress Fulltext Search"
+msgstr ""
+
+#. translators: plugin header field 'Description'
+#: wordpress_fulltext_search.php:0
+#@ wpfts_lang
+msgid "Implementing a true indexed full-text search over wordpress posts and metas without using any external indexing software."
+msgstr ""
+
+#. translators: plugin header field 'Author'
+#: wordpress_fulltext_search.php:0
+#@ wpfts_lang
+msgid "Epsiloncool"
+msgstr ""
+
+#. translators: plugin header field 'AuthorURI'
+#: wordpress_fulltext_search.php:0
+#@ wpfts_lang
+msgid "http://epsiloncool.ru"
+msgstr ""
+
+#. translators: plugin header field 'Version'
+#: wordpress_fulltext_search.php:0
+#@ wpfts_lang
+msgid "5.3.21"
+msgstr ""
+
+#: wordpress_fulltext_search.php:98
+#: wordpress_fulltext_search.php:145
+#@ wpfts_lang
+msgid "Settings"
+msgstr ""
+
+#: wordpress_fulltext_search.php:171
+#@ wpfts_lang
+msgid "This plugin requires WordPress 3.0 or newer. Please update your WordPress installation to activate this plugin."
+msgstr ""
+
+#: wordpress_fulltext_search.php:183
+#@ wpfts_lang
+msgid "Search Engine Status"
+msgstr ""
+
+#: wordpress_fulltext_search.php:192
+#@ wpfts_lang
+msgid "Useful Information"
+msgstr ""
+
+#: wordpress_fulltext_search.php:209
+#@ wpfts_lang
+msgid "Search and Relevance Settings"
+msgstr ""
+

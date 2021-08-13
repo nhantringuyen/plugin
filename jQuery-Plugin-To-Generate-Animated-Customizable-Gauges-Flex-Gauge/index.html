@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>jQuery Flex Gauge Demos</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="FlexGauge.js"></script>
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            padding: 25px;
+        }
+        canvas {
+            -webkit-box-shadow: 0 0 3px 5px #f5f5f5;
+            -moz-box-shadow: 0 0 3px 5px #f5f5f5;
+            box-shadow: 0 0 3px 5px #f5f5f5;
+            border: 1px solid #ccc;
+            display: block;
+            margin: 25px auto 0;
+        }
+    </style>
+</head>
+<body>
+<div class="jumbotron">
+    <h1>jQuery Flex Gauge Demos</h1>
+    <div class="jquery-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title"><strong>Example #1 : Basic Example</strong></h3><br>
+        No options set besides 'appendTo', normal default will put the canvas into the body.
+    </div>
+    <div class="panel-body">
+        <div class="col-md-4" id="example1">
+          <script>
+                var gauge = new FlexGauge({
+                    appendTo: '#example1'
+                });
+            </script>
+        </div>
+        <div class="col-md-6">
+            <div class="row" style="margin-top: 25px;">
+                <b>Javascript</b>
+        <pre>
+            var gauge = new FlexGauge({
+                appendTo: '#example1'
+            });
+        </pre>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title"><strong>Example #2 : Using Styles for Colors</strong></h3><br>
+        Options set for the canvas size, arc size, arc fill size, arc background size, faster animation speed and also using a style name to grab the color.<br>
+        You can pass a class style name and then grab any of the css attributes from that class.
+    </div>
+    <div class="panel-body">
+        <div class="col-md-4" id="example2">
+          <script>
+                var gauge = new FlexGauge({
+                    appendTo: '#example2',
+                    animateEasing: true,
+
+                    elementId: 'example2_canvas',
+                    elementWidth: 150,
+                    elementHeight: 150,
+
+                    arcSize: 65,
+                    arcAngleStart: 1,
+                    arcFillPercent: .80,
+                    arcStrokeFg: 20,
+                    arcStrokeBg: 10,
+                    animateSpeed: 1,
+
+                    styleArcFg: 'btn-success',
+                    styleSrc: 'background-color'
+                });
+            </script>
+        </div>
+        <div class="col-md-6">
+            <div class="row" style="margin-top: 25px;">
+                <b>Javascript</b>
+        <pre>
+            var gauge = new FlexGauge({
+                appendTo: '#example2',
+                animateEasing: true,
+
+                elementId: 'example2_canvas',
+                elementWidth: 150,
+                elementHeight: 150,
+
+                arcSize: 65,
+                arcAngleStart: 1,
+                arcFillPercent: .80,
+                arcStrokeFg: 20,
+                arcStrokeBg: 10,
+                animateSpeed: 1,
+
+                styleArcFg: 'btn-success',
+                styleSrc: 'background-color'
+            });
+        </pre>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title"><strong>Example #3 : Arc Positioning and Update</strong></h3><br>
+        Showing different positioning of the arcAngle, also using .update() to redraw the gauge without destroying it. Update will take all of the same options that the initial constructor FlexGauge() takes.
+    </div>
+    <div class="panel-body">
+        <div class="col-md-4" id="example3">
+          <script>
+                var gaugeUpdate = new FlexGauge({
+                    appendTo: '#example3',
+                    arcFillPercent: Math.random(),
+                    arcAngleStart: .6,
+                    arcAngleEnd: 2.4,
+                    arcStrokeFg: 15,
+                    arcStrokeBg: 30,
+                    colorArcFg: '#444444'
+                });
+                setInterval(function(){
+                    gaugeUpdate.update({
+                        arcFillPercent: Math.random()
+                    });
+                }, 3000);
+            </script>
+        </div>
+        <div class="col-md-6">
+            <div class="row" style="margin-top: 25px;">
+                <b>Javascript</b>
+        <pre>
+            var gauge = new FlexGauge({
+                appendTo: '#example3',
+                arcFillPercent: Math.random(),
+                arcAngleStart: .6,
+                arcAngleEnd: 2.4,
+                arcStrokeFg: 15,
+                arcStrokeBg: 30,
+                colorArcFg: '#444444'
+            });
+
+            setInterval(function(){
+                gauge.update({
+                    arcFillPercent: Math.random()
+                });
+            }, 3000);
+        </pre>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title"><strong>Example #4 : Using Int instead of Perc</strong></h3><br>
+        Instead of using 'arcFillPercent' to show how much of the arc you would like to fill, you can use 'arcFillInt' and 'arcFillTotal' or 'arcFillStart', 'arcFillEnd' and 'arcFillTotal'.<br>
+        This example also shows how to add a different background color with saturation and lightness settings.
+    </div>
+    <div class="panel-body">
+        <div class="col-md-4" id="example4">
+          <script>
+                var gauge = new FlexGauge({
+                    appendTo: '#example4',
+
+                    arcFillInt: 7,
+                    arcFillTotal: 20,
+
+                    arcAngleStart: .5,
+                    arcAngleEnd: 1.5,
+
+                    arcBgColorLight: 200,
+                    arcBgColorSat: 50,
+
+                    colorArcFg: '#FF3300',
+                    colorArcBg: '#0033FF'
+                });
+            </script>
+        </div>
+        <div class="col-md-6">
+            <div class="row" style="margin-top: 25px;">
+                <b>Javascript</b>
+        <pre>
+            var gauge = new FlexGauge({
+                appendTo: '#example4',
+
+                arcFillInt: 7,
+                arcFillTotal: 20,
+
+                arcAngleStart: .5,
+                arcAngleEnd: 1.5,
+
+                arcBgColorLight: 200,
+                arcBgColorSat: 50,
+
+                colorArcFg: '#FF3300',
+                colorArcBg: '#0033FF'
+            });
+
+            //  ----- or -----
+
+            var gauge = new FlexGauge({
+                appendTo: '#example4',
+
+                arcFillStart: 5,
+                arcFillEnd: 12,
+                arcFillTotal: 20,
+
+                arcAngleStart: .5,
+                arcAngleEnd: 1.5,
+
+                arcBgColorLight: 200,
+                arcBgColorSat: 50,
+
+                colorArcFg: '#FF3300',
+                colorArcBg: '#0033FF'
+            });
+        </pre>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title"><strong>Example #5 : Generating Labels</strong></h3><br>
+        Setting 'dialValue' to true will generate a div with the class 'fg-dial' and the current value of the gauge.<br>
+        Setting 'dialLabel' to true will generate a div with the class 'fg-dial-label' with the content 'FlexGauge'. You can set it to whatever you like by passing it a string instead of bool.
+    </div>
+    <div class="panel-body">
+        <style>
+            /** these classes are pre-generated **/
+            .fg-dial {
+                font-size: 200%;
+                font-weight: bold;
+                left: 0;
+                position: absolute;
+                text-align: center;
+                top: 100px;
+                width: 100%;
+            }
+            .fg-dial-label {
+                font-size: 200%;
+                font-weight: bold;
+                left: 0;
+                position: absolute;
+                text-align: center;
+                top: 160px;
+                width: 100%;
+            }
+        </style>
+        <div class="col-md-4" id="example5">
+          <script>
+                var gauge = new FlexGauge({
+                    appendTo: '#example5',
+                    dialValue: true,
+                    dialLabel: true
+                });
+            </script>
+        </div>
+        <div class="col-md-6">
+            <div class="row" style="margin-top: 25px;">
+                <b>Javascript</b>
+        <pre>
+                var gauge = new FlexGauge({
+                    appendTo: '#example5',
+                    dialValue: true,
+                    dialLabel: true
+                });
+        </pre>
+                <b>CSS</b>
+        <pre>
+            /** these classes are pre-generated **/
+            .fg-dial {
+                font-size: 200%;
+                font-weight: bold;
+                left: 0;
+                position: absolute;
+                text-align: center;
+                top: 100px;
+                width: 100%;
+            }
+            .fg-dial-label {
+                font-size: 200%;
+                font-weight: bold;
+                left: 0;
+                position: absolute;
+                text-align: center;
+                top: 160px;
+                width: 100%;
+            }
+        </pre>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title"><strong>Example #6 : Existing Labels</strong></h3><br>
+        You can tell the dial to use an existing class for the div if you already have rules setup. If the div is not inside the 'appendTo' element, it will be created and the specified class will be added to it.
+    </div>
+    <div class="panel-body">
+        <style>
+            .existingDivWithClass {
+                font-size: 200%;
+                font-weight: bold;
+                left: 0;
+                position: absolute;
+                text-align: center;
+                top: 100px;
+                width: 100%;
+            }
+        </style>
+      <div class="col-md-4" id="example6">
+            <div class="existingDivWithClass"></div>
+        <script>
+                var gauge = new FlexGauge({
+                    appendTo: '#example6',
+                    dialValue: true,
+                    dialUnit: '$',
+                    dialUnitPosition: 'before',
+                    dialClass: 'existingDivWithClass',
+                    dialUnits: 'unit',
+                    arcFillInt: 10,
+                    arcFillTotal: 45
+                });
+            </script>
+      </div>
+        <div class="col-md-4" id="example7">
+          <div class="gaugeLabels"></div>
+          <script>
+                var holder = [
+                    {
+                        appendTo: '#example7',
+                        dialValue: true,
+                        dialClass: 'gaugeDials',
+                        dialUnit: '$',
+                        dialUnitPosition: 'before',
+                        dialLabel: 'Sales Revenue',
+                        dialLabelClass: 'gaugeDialsLabel',
+                        arcFillInt: 150,
+                        arcFillTotal: 550,
+                        styleArcFg: 'alert-info',
+                        styleSrc: 'color',
+                        arcStrokeFg: 10,
+                        arcStrokeBg: 20
+                    },
+                    {
+                        appendTo: '#example7',
+                        dialValue: true,
+                        dialLabel: 'Sales Increase',
+                        arcFillPercent: .8,
+                        dialUnitPosition: 'after',
+                        dialUnit: '%',
+                        styleArcFg: 'alert-success',
+                        styleSrc: 'color',
+                        arcStrokeFg: 20,
+                        arcStrokeBg: 10
+                    }
+                ];
+                var current = 0;
+                var gauge = new FlexGauge(holder[current]);
+                setInterval(function(){
+                    current = (current == 0 ? current+1 : current-1);
+                    gauge.update(holder[current]);
+                }, 5000);
+            </script>
+        </div>
+        <div class="col-md-6">
+            <div class="row" style="margin-top: 25px;">
+                <b>Javascript</b>
+        <pre>
+                var gauge = new FlexGauge({
+                    appendTo: '#example6',
+                    dialValue: true,
+                    dialUnit: '$',
+                    dialUnitPosition: 'before',
+                    dialClass: 'existingDivWithClass',
+                    dialUnits: 'unit',
+                    arcFillInt: 10,
+                    arcFillTotal: 45
+                });
+        </pre>
+                <b>CSS</b>
+        <pre>
+            .existingDivWithClass {
+                font-size: 200%;
+                font-weight: bold;
+                left: 0;
+                position: absolute;
+                text-align: center;
+                top: 100px;
+                width: 100%;
+            }
+        </pre>
+                <b>HTML</b>
+                <pre>
+                    &lt;div class=&quot;existingDivWithClass&quot;&gt;&lt;/div&gt;                </pre>
+          </div>
+      </div>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title"><strong>Example #7 : Update All the Things</strong></h3><br>
+        You can update almost everything in the gauge accept for the element* variables since those are never re-drawn. This allows for the same canvas to be used for mutliple gauges without needed to destroy and re-create the canvas.
+    </div>
+    <div class="panel-body">
+      <style>
+            .gaugeDials {
+                font-size: 200%;
+                font-weight: bold;
+                left: 0;
+                position: absolute;
+                text-align: center;
+                top: 100px;
+                width: 100%;
+            }
+            .gaugeDialsLabel {
+                font-size: 180%;
+                font-weight: bold;
+                left: 0;
+                position: absolute;
+                text-align: center;
+                top: 170px;
+                width: 100%;
+            }
+        </style>
+        <div class="col-md-6">
+            <div class="row" style="margin-top: 25px;">
+                <b>Javascript</b>
+        <pre>
+                var holder = [
+                    {
+                        appendTo: '#example7',
+                        dialValue: true,
+                        dialClass: 'gaugeDials',
+                        dialUnit: '$',
+                        dialUnitPosition: 'before',
+                        dialLabel: 'Sales Revenue',
+                        dialLabelClass: 'gaugeDialsLabel',
+                        arcFillInt: 150,
+                        arcFillTotal: 550,
+                        styleArcFg: 'alert-info',
+                        styleSrc: 'color',
+                        arcStrokeFg: 10,
+                        arcStrokeBg: 20
+                    },
+                    {
+                        appendTo: '#example7',
+                        dialValue: true,
+                        dialLabel: 'Sales Increase',
+                        arcFillPercent: .8,
+                        dialUnitPosition: 'after',
+                        dialUnit: '%',
+                        styleArcFg: 'alert-success',
+                        styleSrc: 'color',
+                        arcStrokeFg: 20,
+                        arcStrokeBg: 10
+                    }
+                ];
+                var current = 0;
+                var gauge = new FlexGauge(holder[current]);
+                setInterval(function(){
+                    current = (current == 0 ? current+1 : current-1);
+                    gauge.update(holder[current]);
+                }, 5000);
+        </pre>
+                <b>CSS</b>
+        <pre>
+            .gaugeDials {
+                font-size: 200%;
+                font-weight: bold;
+                left: 0;
+                position: absolute;
+                text-align: center;
+                top: 100px;
+                width: 100%;
+            }
+            .gaugeDialsLabel {
+                font-size: 180%;
+                font-weight: bold;
+                left: 0;
+                position: absolute;
+                text-align: center;
+                top: 170px;
+                width: 100%;
+            }
+        </pre>
+          </div>
+      </div>
+    </div>
+</div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

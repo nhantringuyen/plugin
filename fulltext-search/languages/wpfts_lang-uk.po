@@ -1,0 +1,572 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Wordpress Fulltext Search v5.3.21\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2015-08-12 13:05:22+0000\n"
+"Last-Translator: epsilonadmin <epsil_on@mail.ru>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%100/10==1 ? 2 : n%10==1 ? 0 : (n+9)%10>3 ? 2 : 1;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: Ukrainian\n"
+"X-Poedit-Country: UKRAINE\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: includes/templates/admin_header.php:3
+#@ wpfts_lang
+msgid "WP FullText Search Options"
+msgstr "Параметри WP FullText Search"
+
+#: includes/templates/admin_options.php:7
+#: wordpress_fulltext_search.php:201
+#@ wpfts_lang
+msgid "Main Configuration"
+msgstr "Основні налаштування"
+
+#: includes/templates/admin_options.php:8
+#: wordpress_fulltext_search.php:218
+#@ wpfts_lang
+msgid "Indexing Engine Settings"
+msgstr "Пошуковий движок"
+
+#: includes/templates/admin_options.php:9
+#: wordpress_fulltext_search.php:226
+#@ wpfts_lang
+msgid "Sandbox Area"
+msgstr "Пісочниця"
+
+#: includes/templates/admin_options.php:37
+#@ wpfts_lang
+msgid "Save Changes"
+msgstr "Зберегти"
+
+#: includes/templates/admin_options.php:61
+#@ wpfts_lang
+msgid "Changing of Indexing Engine Settings will automatically rebuild the search index. This operation could take some time. Are you sure?"
+msgstr "Зміна налаштувань пошукового движка автоматично запустить переналаштування індексу. Ця дія може зайняти деякий час. Ви впевнені?"
+
+#: includes/templates/admin_options.php:61
+#@ wpfts_lang
+msgid "Save Changes and Rebuild Index"
+msgstr "Зберегти і Переналаштувати індекс"
+
+#: includes/wpfts_core.php:48
+#@ wpfts_lang
+msgid "Error: "
+msgstr "Помилка:"
+
+#: includes/wpfts_core.php:68
+#@ wpfts_lang
+msgid "<b style=\"color: red;\">Congratulations!</b> Wordpress FullText Search plugin was just installed and activated successfully!<br>In order to complete activation, we need to create an index of your existing WP post data. To run this process, just go to <a href=\"/wp-admin/options-general.php?page=wpfts-options\">WPFTS Settings Page</a>"
+msgstr "<b style=\"color: red;\">Вітаємо!</b> Плагін Wordpress FullText Search успішно установлено и активировано!<br>Щоб завершити активацію, нам потрібно створити пошуковий індекс для ваших існуючих даних. Щоб запустити процес, просто перейдіть на сторінку <a href=\"/wp-admin/options-general.php?page=wpfts-options\">Налаштування WPFTS</a>"
+
+#: includes/wpfts_core.php:72
+#@ wpfts_lang
+msgid "WPFTS plugin can not create some DB tables."
+msgstr "Плагін WPFTS не може створити одну чи декілька таблиць БД."
+
+#: includes/wpfts_core.php:386
+#, php-format
+#@ wpfts_lang
+msgid "%s posts has been rebuilt"
+msgstr "%s записів проіндексовано"
+
+#: includes/wpfts_core.php:467
+#, php-format
+#@ wpfts_lang
+msgid "The weight value of cluster \"%s\" should be numeric value from 0.0 to 1.0"
+msgstr "Значення ваги кластера \"%s\" має бути числом від 0.0 до 1.0"
+
+#: includes/wpfts_core.php:494
+#: includes/wpfts_core.php:576
+#: includes/wpfts_core.php:624
+#: includes/wpfts_core.php:726
+#@ wpfts_lang
+msgid "There are errors"
+msgstr "Виявлено помилки"
+
+#: includes/wpfts_core.php:506
+#: includes/wpfts_core.php:590
+#: includes/wpfts_core.php:689
+#: includes/wpfts_core.php:855
+#: includes/wpfts_core.php:876
+#@ wpfts_lang
+msgid "The form is outdated. Please refresh the page and try again."
+msgstr "Сторінка застаріла. Будь ласка, обновіть сторінку і спробуйте знову."
+
+#: includes/wpfts_core.php:548
+#@ wpfts_lang
+msgid "Maximum Word Frequency should be an integer number from 0 to 100"
+msgstr "Максимальна Частота Слів має бути цілим числом від 0 до 100"
+
+#: includes/wpfts_core.php:556
+#@ wpfts_lang
+msgid "Minimum Word Length should be an integer number from 0 to 50"
+msgstr "Мінімальна Довжина Слова має бути цілим числом від 0 до 50"
+
+#: includes/wpfts_core.php:612
+#@ wpfts_lang
+msgid "Please specify post ID"
+msgstr "Вкажіть ID публікації"
+
+#: includes/wpfts_core.php:615
+#@ wpfts_lang
+msgid "Please specify a number"
+msgstr "Укажіть число"
+
+#: includes/wpfts_core.php:629
+#, php-format
+#@ wpfts_lang
+msgid "Results of Pre-indexing Filter Tester for Post ID = %s"
+msgstr "Результати тестування Пре-индекс фильтра для записи Post ID = %s"
+
+#: includes/wpfts_core.php:649
+#@ wpfts_lang
+msgid "Token"
+msgstr "Токен"
+
+#: includes/wpfts_core.php:650
+#@ wpfts_lang
+msgid "Content"
+msgstr "Зміст"
+
+#: includes/wpfts_core.php:670
+#, php-format
+#@ wpfts_lang
+msgid "Filter result is not array. Please read <a href=\"%s\" target=\"_blank\">documentation</a> to fix this error."
+msgstr "Результат фильтра не является массивом. Пожалуйста, прочтите <a href=\"%s\" target=\"_blank\">документацию</a> чтобы это исправить."
+
+#: includes/wpfts_core.php:675
+#@ wpfts_lang
+msgid "The post with specified ID is not found."
+msgstr "Запис зі вказаним ID не виявлений."
+
+#: includes/wpfts_core.php:718
+#@ wpfts_lang
+msgid "Please specify search query"
+msgstr "Укажіть пошуковий запит"
+
+#: includes/wpfts_core.php:731
+#, php-format
+#@ wpfts_lang
+msgid "Results of search for query = \"%s\""
+msgstr "Результат пошуку по запиту= \"%s\""
+
+#: includes/wpfts_core.php:758
+#@ wpfts_lang
+msgid "Time spent: <b>%.3f</b> sec"
+msgstr "Витрачено часу: <b>%.3f</b> сек"
+
+#: includes/wpfts_core.php:806
+#@ wpfts_lang
+msgid "#"
+msgstr ""
+
+#: includes/wpfts_core.php:807
+#@ wpfts_lang
+msgid "ID"
+msgstr "ID"
+
+#: includes/wpfts_core.php:808
+#@ wpfts_lang
+msgid "Type"
+msgstr "Тип"
+
+#: includes/wpfts_core.php:809
+#@ wpfts_lang
+msgid "Status"
+msgstr "Статус"
+
+#: includes/wpfts_core.php:810
+#@ wpfts_lang
+msgid "Title, Thumbnail, Excerpt"
+msgstr "Заголовок, Іконка і Цитата"
+
+#: includes/wpfts_core.php:811
+#@ wpfts_lang
+msgid "Relevance"
+msgstr "Релевантність"
+
+#: includes/wpfts_core.php:838
+#, php-format
+#@ wpfts_lang
+msgid "Found: <b>%d</b> posts"
+msgstr "Знайдено: <b>%d</b> записів"
+
+#: includes/wpfts_core.php:893
+#@ wpfts_lang
+msgid "posts per page"
+msgstr "записів на сторінці"
+
+#: includes/wpfts_core.php:904
+#, php-format
+#@ wpfts_lang
+msgid "Shown <span>%1s</span> from <b>%2s</b>"
+msgstr "Показано <span>%1s</span> із <b>%2s</b>"
+
+#: includes/wpfts_output.php:20
+#@ wpfts_lang
+msgid "Disabled"
+msgstr "Вимкнено"
+
+#: includes/wpfts_output.php:23
+#@ wpfts_lang
+msgid "Active"
+msgstr "Працює"
+
+#: includes/wpfts_output.php:25
+#@ wpfts_lang
+msgid "Awaiting"
+msgstr "Очікування"
+
+#: includes/wpfts_output.php:30
+#@ wpfts_lang
+msgid "In Index"
+msgstr "В індексі"
+
+#: includes/wpfts_output.php:30
+#: includes/wpfts_output.php:39
+#: includes/wpfts_output.php:40
+#@ wpfts_lang
+msgid "posts"
+msgstr "записів"
+
+#: includes/wpfts_output.php:38
+#: includes/wpfts_output.php:42
+#@ wpfts_lang
+msgid "Indexing is in progress"
+msgstr "Проходить індексація"
+
+#: includes/wpfts_output.php:39
+#@ wpfts_lang
+msgid "Actual"
+msgstr "Актуальних"
+
+#: includes/wpfts_output.php:40
+#@ wpfts_lang
+msgid "Pending"
+msgstr "В черзі"
+
+#: includes/wpfts_output.php:43
+#@ wpfts_lang
+msgid "Est. time left: "
+msgstr "Залишилось часу:"
+
+#: includes/wpfts_output.php:46
+#@ wpfts_lang
+msgid "In the process of indexing your site might run slower. Please do not worry and wait until index finishing."
+msgstr "В процесі індексування сайт може працювати повільніше, ніж звичайно. Не турбуйтесь і дочекайтесь закінчення індексування."
+
+#: includes/wpfts_output.php:49
+#@ wpfts_lang
+msgid "Index is OK"
+msgstr "Індекс в порядку."
+
+#: includes/wpfts_output.php:52
+#@ wpfts_lang
+msgid "Indexing is disabled"
+msgstr "Індексування відключено."
+
+#: includes/wpfts_output.php:82
+#@ wpfts_lang
+msgid "Enable FullText Search"
+msgstr "Дозволити FullText Search"
+
+#: includes/wpfts_output.php:95
+#@ wpfts_lang
+msgid "Auto-index"
+msgstr "Автоіндексування"
+
+#: includes/wpfts_output.php:112
+#@ wpfts_lang
+msgid "The action will rebuild the search index, which could take some time. Are you sure?"
+msgstr "Ця дія запустить повне переналаштування індексу, що займе деякий час. Ви впевнені, що бажаєте це зробити?"
+
+#: includes/wpfts_output.php:112
+#@ wpfts_lang
+msgid "Rebuild Index"
+msgstr "Переналаштувати індекс"
+
+#: includes/wpfts_output.php:113
+#@ wpfts_lang
+msgid "Resetting"
+msgstr "Скидання"
+
+#: includes/wpfts_output.php:140
+#@ wpfts_lang
+msgid "Default Search Logic"
+msgstr "Логіка пошуку за налаштуванням."
+
+#: includes/wpfts_output.php:153
+#@ wpfts_lang
+msgid "Cluster Weights"
+msgstr "Ваговий коефіцієнт Кластерів"
+
+#: includes/wpfts_output.php:188
+#@ wpfts_lang
+msgid "Minimum Word Length"
+msgstr "Мінімальна довжина слова"
+
+#: includes/wpfts_output.php:202
+#@ wpfts_lang
+msgid "Maximum Word Frequency"
+msgstr "Максимальна частота слова"
+
+#: includes/wpfts_output.php:216
+#@ wpfts_lang
+msgid "Stop Words"
+msgstr "Стоп-слова"
+
+#: includes/wpfts_output.php:218
+#@ wpfts_lang
+msgid "A comma-separated list of custom stop words"
+msgstr "Список стоп-слів через кому"
+
+#: includes/wpfts_output.php:222
+#@ wpfts_lang
+msgid "the, a, an, ...etc"
+msgstr "і, а, для, як, би... і т.д."
+
+#: includes/wpfts_output.php:266
+#: includes/wpfts_output.php:280
+#@ wpfts_lang
+msgid "* (Any)"
+msgstr "* (Будь який)"
+
+#: includes/wpfts_output.php:267
+#@ wpfts_lang
+msgid "publish (Published)"
+msgstr "publish (Опублікований)"
+
+#: includes/wpfts_output.php:268
+#@ wpfts_lang
+msgid "future (Future)"
+msgstr "future (Запланований)"
+
+#: includes/wpfts_output.php:269
+#@ wpfts_lang
+msgid "draft (Draft)"
+msgstr "draft (Чернетка)"
+
+#: includes/wpfts_output.php:270
+#@ wpfts_lang
+msgid "pending (Pending)"
+msgstr "pending (Очікує)"
+
+#: includes/wpfts_output.php:271
+#@ wpfts_lang
+msgid "private (Private)"
+msgstr "private (Прихований)"
+
+#: includes/wpfts_output.php:272
+#@ wpfts_lang
+msgid "trash (Trash)"
+msgstr "trash (В кошику)"
+
+#: includes/wpfts_output.php:273
+#@ wpfts_lang
+msgid "auto-draft (Auto-Draft)"
+msgstr "auto-draft (Автозбережений)"
+
+#: includes/wpfts_output.php:274
+#@ wpfts_lang
+msgid "inherit (Inherit)"
+msgstr "inherit (Дочірній)"
+
+#: includes/wpfts_output.php:289
+#@ wpfts_lang
+msgid "Pre-indexing Filter Tester"
+msgstr "Тестер попереднього індексу фільтра"
+
+#: includes/wpfts_output.php:292
+#@ wpfts_lang
+msgid "You can test your own <b>wpfts_index_post</b> filter here. Just enter an ID of a post you want and press Test Filter button."
+msgstr "Ви можете протестувати ваш власний фільтр <b>wpfts_index_post</b> тут. Просто введіть ID запису (публікації) і натисніть кнопку Тестувати."
+
+#: includes/wpfts_output.php:294
+#@ wpfts_lang
+msgid "Post ID:"
+msgstr "ID запису:"
+
+#: includes/wpfts_output.php:299
+#@ wpfts_lang
+msgid "Test Filter"
+msgstr "Тестувати"
+
+#: includes/wpfts_output.php:306
+#@ wpfts_lang
+msgid "Search Tester"
+msgstr "Тестер пошуку"
+
+#: includes/wpfts_output.php:309
+#@ wpfts_lang
+msgid "You can test search with any query here. Standard wordpress <b>WP_Query</b> object with WPFTS features will be used."
+msgstr "Вы можете протестувати будь-який запит тут. При пошуку буде використано стандартний об`єкт <b>WP_Query</b> з додатковими функціями від WPFTS."
+
+#: includes/wpfts_output.php:311
+#@ wpfts_lang
+msgid "Query:"
+msgstr "Запит:"
+
+#: includes/wpfts_output.php:316
+#@ wpfts_lang
+msgid "Test Search"
+msgstr "Тестувати"
+
+#: includes/wpfts_output.php:324
+#@ wpfts_lang
+msgid "Disable WPFTS"
+msgstr "Відключити WPFTS"
+
+#: includes/wpfts_output.php:327
+#@ wpfts_lang
+msgid "Disable SQL cache"
+msgstr "Відключити кеш MySQL"
+
+#: includes/wpfts_output.php:332
+#@ wpfts_lang
+msgid "Post Type:"
+msgstr "Тип запису: "
+
+#: includes/wpfts_output.php:336
+#@ wpfts_lang
+msgid "Post Status:"
+msgstr "Статус публікації:"
+
+#. translators: plugin header field 'Name'
+#: wordpress_fulltext_search.php:0
+#@ wpfts_lang
+msgid "Wordpress Fulltext Search"
+msgstr ""
+
+#. translators: plugin header field 'Description'
+#: wordpress_fulltext_search.php:0
+#@ wpfts_lang
+msgid "Implementing a true indexed full-text search over wordpress posts and metas without using any external indexing software."
+msgstr "Додає індексований пошук, пошук по мета-тегам та інші функції без установки зовнішніх індексуючих програм."
+
+#. translators: plugin header field 'Author'
+#: wordpress_fulltext_search.php:0
+#@ wpfts_lang
+msgid "Epsiloncool"
+msgstr ""
+
+#. translators: plugin header field 'AuthorURI'
+#: wordpress_fulltext_search.php:0
+#@ wpfts_lang
+msgid "http://epsiloncool.ru"
+msgstr ""
+
+#: wordpress_fulltext_search.php:98
+#: wordpress_fulltext_search.php:145
+#@ wpfts_lang
+msgid "Settings"
+msgstr "Налаштування"
+
+#: wordpress_fulltext_search.php:171
+#@ wpfts_lang
+msgid "This plugin requires WordPress 3.0 or newer. Please update your WordPress installation to activate this plugin."
+msgstr "Цей плагін потребує WordPress 3.0 чи більш новий. Будь ласка, обновіть ваш WordPress для активації плагіна."
+
+#: wordpress_fulltext_search.php:183
+#@ wpfts_lang
+msgid "Search Engine Status"
+msgstr "Статус пошукового движка"
+
+#: wordpress_fulltext_search.php:192
+#@ wpfts_lang
+msgid "Useful Information"
+msgstr "Інформація"
+
+#: wordpress_fulltext_search.php:209
+#@ wpfts_lang
+msgid "Search and Relevance Settings"
+msgstr "Налаштування пошуку та релевантності"
+
+#: includes/wpfts_output.php:68
+#@ wpfts_lang
+msgid "WPFTS Home"
+msgstr "WPFTS Домашня сторінка"
+
+#: includes/wpfts_output.php:69
+#@ wpfts_lang
+msgid "WPFTS Documentation"
+msgstr "WPFTS Документація"
+
+#: includes/wpfts_output.php:86
+#: includes/wpfts_output.php:99
+#@ wpfts_lang
+msgid "Enabled"
+msgstr "Включено"
+
+#: includes/wpfts_output.php:91
+#@ wpfts_lang
+msgid "(If not enabled, regular integrated \"not indexed\" WordPress search will be used)"
+msgstr "(Якщо не включено, то при пошуку буде використано звичайний неіндексований алгоритм WordPress)"
+
+#: includes/wpfts_output.php:104
+#@ wpfts_lang
+msgid "(Normally, WP FullText Search will autoindex any new post or post changes even if you disabled previous option. Disabling this option will completely stop all plugin functions. However, you probably have to do a full index rebuild, if you activate the plugin again.)"
+msgstr "(Як правило, WP FullText Search автоматично додає та обновляє індекс для кожного поста, навіть якщо ви відключили попередню опцію. Відключення індексування повністю відключить всі функції плагіна. Але, вірогідно, вам доведеться зробити повну переіндексацію, якщо ви вирішите включити цю опцію знову.)"
+
+#: includes/wpfts_output.php:105
+#@ wpfts_lang
+msgid "<strong>NOTE</strong>: Disabling this option is NOT recommended!"
+msgstr "<strong>ВНИМАНИЕ</strong>: Відключення цієї опції НЕ рекомендуеться!"
+
+#: includes/wpfts_output.php:149
+#@ wpfts_lang
+msgid "(This option tells the search engine whether all query words should contain in the found post (AND) or any of these words (OR).)"
+msgstr "(Ця опція дозволяє шукати записи, в яких є всі шукані слова  (AND) чи будь-яке з цих слів (OR).)"
+
+#: includes/wpfts_output.php:168
+#@ wpfts_lang
+msgid "(`Cluster` is a part of post (either title, content or even specific part which you can define using <b>wpfts_index_post</b> filter). You can assign some relevance weight to each of them)"
+msgstr "(`Кластер` - це частина публікації. (наприклад, Заголовок, Зміст чи інша частина, яку ви можете створити, використоуючи фільтр <b>wpfts_index_post</b>). Ви можете установити свій ваговий коефіцієнт релевантності для кожного кластера.)"
+
+#: includes/wpfts_output.php:194
+#@ wpfts_lang
+msgid "characters"
+msgstr "символів"
+
+#: includes/wpfts_output.php:198
+#@ wpfts_lang
+msgid "<b>Stop Word</b> is a word which is not indexing and can not be used to search for."
+msgstr "<b>Стоп-слово</b> - це слово, що не індексується і не може бути використано ддя пошуку."
+
+#: includes/wpfts_output.php:212
+#@ wpfts_lang
+msgid "(Consider a word that is found in the specified or more amount of documents as a stop word.)"
+msgstr "(Рахувати слово, що зустрічається в указаній чи більшій кількості документів стоп-словом.)"
+
+#: includes/wpfts_output.php:321
+#@ wpfts_lang
+msgid "Additional Options:"
+msgstr "Додаткові опції:"
+
+#. translators: plugin header field 'Version'
+#: wordpress_fulltext_search.php:0
+#@ wpfts_lang
+msgid "5.3.21"
+msgstr ""
+
+#: includes/wpfts_output.php:117
+#, php-format
+#@ wpfts_lang
+msgid "(Use this button when you need to completely rebuild search index database, for example, when you changed custom <b>wpfts_index_post</b> filter function. Remember that this operation could take a long time. Please refer for <a href=\"%s\" target=\"_blank\">documentation</a> for more information.)"
+msgstr "(Ця кнопка запустить повне переналаштування пошукового індексу.  Це може бути необхідно, якщо ви, наприклад, змінили функцію фільтра <b>wpfts_index_post</b>. Пам`ятайте, що цей процес займає деякий час, протягом якого WordPress буде використовувати звичайний пошук. Зверніться до <a href=\"%s\" target=\"_blank\">документації</a>, щоб дізнатись більше."
+
+#: includes/wpfts_output.php:198
+#, php-format
+#@ wpfts_lang
+msgid "(Consider any word shorter than specified number of characters as a <a data-hint=\"%1s\" href=\"%2s\" target=\"_blank\">stop word</a>.)"
+msgstr "(Считать <a data-hint=\"%1s\" href=\"%2s\" target=\"_blank\">стоп-словом</a> любое слово, содержащее меньшее количество символов, чем указанное здесь.)"
+

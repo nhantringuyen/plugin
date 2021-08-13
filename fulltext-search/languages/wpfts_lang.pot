@@ -1,0 +1,846 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Fulltext Search\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-22 01:57+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.3.0; wp-5.2.2"
+
+#: includes/wpfts_output.php:375
+msgid "\"Not Found\" words"
+msgstr ""
+
+#: includes/wpfts_core.php:1157
+msgid "#"
+msgstr ""
+
+#: includes/wpfts_core.php:665
+#, php-format
+msgid "%s posts has been rebuilt"
+msgstr ""
+
+#: includes/wpfts_output.php:210
+msgid ""
+"(`Cluster` is a part of post (either title, content or even specific part "
+"which you can define using <b>wpfts_index_post</b> filter). You can assign "
+"some relevance weight to each of them)"
+msgstr ""
+
+#: includes/wpfts_output.php:484
+msgid ""
+"(Allow for posts to be searchable by their attached files content. When "
+"enabled, this option will include attachments' index to their parent post "
+"indexes.)"
+msgstr ""
+
+#: includes/wpfts_output.php:238
+msgid ""
+"(Cleans up the query string before using it for search. Uncheck this only if "
+"you are using your own text splitting algorithm)"
+msgstr ""
+
+#: includes/wpfts_output.php:458
+msgid ""
+"(Consider a word that is found in the specified or more amount of documents "
+"as a stop word.)"
+msgstr ""
+
+#: includes/wpfts_output.php:444
+#, php-format
+msgid ""
+"(Consider any word shorter than specified number of characters as a <a data-"
+"hint=\"%1s\" href=\"%2s\" target=\"_blank\">stop word</a>.)"
+msgstr ""
+
+#: includes/wpfts_output.php:224
+msgid ""
+"(Enables searching substrings in the middle of words. This is much slower "
+"than usual search, so use it with care. Keep it disabled if you have any "
+"issues with MySQL performance.)"
+msgstr ""
+
+#: includes/wpfts_output.php:133
+msgid ""
+"(If not enabled, regular integrated \"not indexed\" WordPress search will be "
+"used)"
+msgstr ""
+
+#: includes/wpfts_output.php:296
+msgid "(Modify main WP query default search results ordering.)"
+msgstr ""
+
+#: includes/wpfts_output.php:278
+msgid ""
+"(Modify main WP query defaults so it will order search results by specific "
+"data.)"
+msgstr ""
+
+#: includes/wpfts_output.php:146
+msgid ""
+"(Normally, WP FullText Search will autoindex any new post or post changes "
+"even if you disabled previous option. Disabling this option will completely "
+"stop all plugin functions. However, you probably have to do a full index "
+"rebuild, if you activate the plugin again.)"
+msgstr ""
+
+#: includes/wpfts_output.php:300 includes/wpfts_output.php:475
+msgid "(Pro Version only)"
+msgstr ""
+
+#: includes/wpfts_output.php:339
+msgid "(Replaces Wordpress excerpts by WPFTS Smart Excerpts in search results)"
+msgstr ""
+
+#: includes/wpfts_output.php:499
+msgid ""
+"(Sometimes other MySQL engine type can give better results in speed. Switch "
+"this to InnoDB if you have any issues with MySQL locks or your host is "
+"optimized specifically for InnoDB.)"
+msgstr ""
+
+#: includes/wpfts_output.php:191
+msgid ""
+"(This option tells the search engine whether all query words should contain "
+"in the found post (AND) or any of these words (OR).)"
+msgstr ""
+
+#: includes/wpfts_output.php:309
+msgid ""
+"(Tweak standard WP query widget so it will search in attachments and display "
+"them in search results.)"
+msgstr ""
+
+#: includes/wpfts_output.php:159
+#, php-format
+msgid ""
+"(Use this button when you need to completely rebuild search index database, "
+"for example, when you changed custom <b>wpfts_index_post</b> filter function."
+" Remember that this operation could take a long time. Please refer for <a "
+"href=\"%s\" target=\"_blank\">documentation</a> for more information.)"
+msgstr ""
+
+#: includes/wpfts_output.php:354
+msgid ""
+"(WPFTS will try to keep excerpt length between 90% and 110% of this value)"
+msgstr ""
+
+#: includes/wpfts_output.php:541 includes/wpfts_output.php:555
+msgid "* (Any)"
+msgstr ""
+
+#: includes/wpfts_core.php:149
+msgid ""
+"<b style=\"color: red;\">Attention!</b> <b>WP Fulltext Search</b> plugin "
+"requires your attention.<br><br>Please <a href=\"admin.php?page=wpfts-"
+"options\">click HERE</a> to go to WPFTS Settings page."
+msgstr ""
+
+#: includes/wpfts_core.php:202
+msgid ""
+"<b style=\"color: red;\">Congratulations!</b> <b>WP FullText Search "
+"plugin</b> has just been installed and successfully activated!<br><br>To "
+"complete the installation, we need to create the Search Index of your "
+"existing WP posts data. To start this process, simply go to the <a "
+"href=\"admin.php?page=wpfts-options\">WPFTS Settings Page</a>"
+msgstr ""
+
+#: includes/wpfts_core.php:144
+msgid ""
+"<b style=\"color: red;\">The plugin's database requires update.</b><br>It is "
+"necessary to rebuild the index to ensure the correct operation of the search "
+"engine. This may take some time.<br><br>Click <a href=\"#\" "
+"class=\"btn_notify_start_indexing\">here</a> to rebuild the search index now."
+msgstr ""
+
+#: includes/wpfts_output.php:444
+msgid ""
+"<b>Stop Word</b> is a word which is not indexing and can not be used to "
+"search for."
+msgstr ""
+
+#: includes/templates/admin_options.php:144
+#, php-format
+msgid ""
+"<h2>Important Notice Before You Start</h2>\n"
+"\t\t<p>Everything is ready to index the contents of your site. When creating "
+"a Search Index, the plugin will use its own tables in the database, no your "
+"data will be affected.</p>\n"
+"\t\t<p>The process may take a long time (it depends on the amount of data on "
+"the site) and the site may work a little slower. There is no reason to worry "
+"- this slowness will end with the end of the indexing process. To reduce the "
+"time to build the index, please <b>do not close</b> the plugin settings page."
+"</p>\n"
+"\t\t<p>If you didn’t install WPFTS Add-ons and didn’t set up your own <code>"
+"wpfts_index_post</code> hook, then this time only the Titles and the main "
+"Content of the publications will be included in the index. If you want other "
+"data to participate in the search (such as <b>post meta data</b>), now is "
+"the time to read the <a href=\"%s\" target=\"_blank\">WPFTS Documentation</a>"
+" and make the necessary changes.</p>\n"
+"\t\t<p>We wish you a pleasant work with the WP FullText Search plugin.</p>\n"
+"\t\t<p>We also thank you for your <a href=\"%s\" target=\"_blank\">comments "
+"and suggestions</a>.</p>\n"
+"\t\t<p><i>WPFTS plugin development team.</i></p>"
+msgstr ""
+
+#: includes/wpfts_output.php:147
+msgid "<strong>NOTE</strong>: Disabling this option is NOT recommended!"
+msgstr ""
+
+#: includes/wpfts_db_updates.php:7
+msgid ""
+"<ul><li>Big update: lots of functions was moved from the Pro version to the "
+"Free WPFTS Version</li>\n"
+"\t\t\t\t\t\t<li>Some interface bugs were fixed</li>\n"
+"\t\t\t\t\t\t<li>Relevance formula was completely rebuilt</li>\n"
+"\t\t\t\t\t\t<li>Reindex algorithm was sufficiently improved (now 5 times "
+"faster!)</li>\n"
+"\t\t\t\t\t\t<li>Word max length was increased to 255 characters</li>\n"
+"\t\t\t\t\t</ul>"
+msgstr ""
+
+#: includes/wpfts_output.php:464
+msgid "A comma-separated list of custom stop words"
+msgstr ""
+
+#: includes/wpfts_output.php:51
+msgid "Active"
+msgstr ""
+
+#: includes/wpfts_output.php:67
+msgid "Actual"
+msgstr ""
+
+#: includes/wpfts_output.php:596
+msgid "Additional Options:"
+msgstr ""
+
+#: includes/wpfts_output.php:263
+msgid "Author"
+msgstr ""
+
+#: includes/wpfts_output.php:548
+msgid "auto-draft (Auto-Draft)"
+msgstr ""
+
+#: includes/wpfts_output.php:137
+msgid "Auto-index"
+msgstr ""
+
+#: includes/wpfts_output.php:53
+msgid "Awaiting"
+msgstr ""
+
+#: includes/templates/indexing-engine.php:20
+msgid ""
+"Changing of Indexing Engine Settings will automatically upgrade the search "
+"index. This operation could take some time. Are you sure?"
+msgstr ""
+
+#: includes/wpfts_output.php:440
+msgid "characters"
+msgstr ""
+
+#: includes/wpfts_output.php:195
+msgid "Cluster Weights"
+msgstr ""
+
+#: includes/wpfts_output.php:271
+msgid "Comment Count"
+msgstr ""
+
+#: includes/wpfts_core.php:1001
+msgid "Content"
+msgstr ""
+
+#: includes/wpfts_output.php:267
+msgid "Created Date"
+msgstr ""
+
+#: includes/wpfts_output.php:96
+#, php-format
+msgid "Current Version v%s"
+msgstr ""
+
+#: includes/wpfts_output.php:214
+msgid "Deeper Search"
+msgstr ""
+
+#: includes/wpfts_output.php:182
+msgid "Default Search Logic"
+msgstr ""
+
+#: includes/wpfts_output.php:402
+msgid "Demo Output:"
+msgstr ""
+
+#: includes/wpfts_output.php:388
+msgid "Direct Download Link"
+msgstr ""
+
+#: includes/wpfts_output.php:602
+msgid "Disable SQL cache"
+msgstr ""
+
+#: includes/wpfts_output.php:599
+msgid "Disable WPFTS"
+msgstr ""
+
+#: includes/wpfts_output.php:48
+msgid "Disabled"
+msgstr ""
+
+#: includes/wpfts_output.php:300
+msgid "Display Attachments"
+msgstr ""
+
+#: includes/wpfts_result_item.php:382
+msgid "Download"
+msgstr ""
+
+#: includes/wpfts_output.php:544
+msgid "draft (Draft)"
+msgstr ""
+
+#: includes/wpfts_output.php:124
+msgid "Enable FullText Search"
+msgstr ""
+
+#: includes/wpfts_output.php:329
+msgid "Enable Smart Excerpts"
+msgstr ""
+
+#: includes/wpfts_output.php:128 includes/wpfts_output.php:141
+#: includes/wpfts_output.php:219 includes/wpfts_output.php:233
+#: includes/wpfts_output.php:304 includes/wpfts_output.php:334
+#: includes/wpfts_output.php:479
+msgid "Enabled"
+msgstr ""
+
+#. Author of the plugin
+msgid "Epsiloncool"
+msgstr ""
+
+#: includes/wpfts_core.php:264
+msgid "Error: "
+msgstr ""
+
+#: includes/wpfts_output.php:71
+msgid "Est. time left: "
+msgstr ""
+
+#: includes/wpfts_output.php:380
+msgid "File Extension"
+msgstr ""
+
+#: includes/wpfts_result_item.php:385
+msgid "File Size"
+msgstr ""
+
+#: includes/wpfts_output.php:384
+msgid "Filesize"
+msgstr ""
+
+#: includes/wpfts_core.php:1021
+#, php-format
+msgid ""
+"Filter result is not array. Please read <a href=\"%s\" target=\"_blank\">"
+"documentation</a> to fix this error."
+msgstr ""
+
+#: includes/wpfts_core.php:1475
+msgid "Finish Now"
+msgstr ""
+
+#: includes/wpfts_output.php:378
+msgid "For Attachments: (PRO only)"
+msgstr ""
+
+#: includes/wpfts_core.php:1189
+#, php-format
+msgid "Found: <b>%d</b> posts"
+msgstr ""
+
+#: includes/wpfts_output.php:103
+msgid ""
+"Friends, I need a new laptop. My old one is very slow and it's hard to make "
+"frequent updated of the WPFTS plugin. I need your help.<br>\n"
+"\t\t<b>Thank you!</b>"
+msgstr ""
+
+#: fulltext-search.php:157
+msgid "Full Text Search"
+msgstr ""
+
+#: includes/wpfts_output.php:543
+msgid "future (Future)"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "http://e-wm.org"
+msgstr ""
+
+#: includes/wpfts_core.php:1158
+msgid "ID"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Implementing a true indexed full-text search over wordpress posts and metas "
+"without using any external indexing software."
+msgstr ""
+
+#: includes/wpfts_output.php:58
+msgid "In Index"
+msgstr ""
+
+#: includes/wpfts_output.php:74
+msgid ""
+"In the process of indexing your site might run slower. Please do not worry "
+"and wait until index finishing."
+msgstr ""
+
+#: includes/wpfts_output.php:475
+msgid "Include Attachments"
+msgstr ""
+
+#: includes/wpfts_output.php:359
+msgid "Include to excerpt:"
+msgstr ""
+
+#: includes/wpfts_output.php:77
+msgid "Index is OK"
+msgstr ""
+
+#: fulltext-search.php:161
+msgid "Indexing Engine"
+msgstr ""
+
+#: fulltext-search.php:161 includes/templates/admin_options.php:91
+#: includes/templates/admin_options.php:168
+msgid "Indexing Engine Settings"
+msgstr ""
+
+#: includes/wpfts_output.php:80
+msgid "Indexing is disabled"
+msgstr ""
+
+#: includes/wpfts_output.php:66 includes/wpfts_output.php:70
+msgid "Indexing is in progress"
+msgstr ""
+
+#: includes/wpfts_output.php:549
+msgid "inherit (Inherit)"
+msgstr ""
+
+#: includes/wpfts_output.php:228
+msgid "Internal Query Filter"
+msgstr ""
+
+#: includes/templates/licensing.php:31
+msgid "License key saved!"
+msgstr ""
+
+#: includes/wpfts_output.php:392
+msgid "Link Title to File Download"
+msgstr ""
+
+#: fulltext-search.php:160 includes/templates/admin_options.php:56
+#: includes/templates/admin_options.php:167
+msgid "Main Configuration"
+msgstr ""
+
+#: includes/templates/admin_options.php:72
+msgid "Main WP Search Tweaks"
+msgstr ""
+
+#: includes/wpfts_output.php:448
+msgid "Maximum Word Frequency"
+msgstr ""
+
+#: includes/wpfts_core.php:905
+msgid "Maximum Word Frequency should be an integer number from 0 to 100"
+msgstr ""
+
+#: includes/wpfts_output.php:434
+msgid "Minimum Word Length"
+msgstr ""
+
+#: includes/wpfts_core.php:913
+msgid "Minimum Word Length should be an integer number from 0 to 50"
+msgstr ""
+
+#: includes/wpfts_output.php:268
+msgid "Modified Date"
+msgstr ""
+
+#: includes/wpfts_output.php:488
+msgid "MySQL Engine Type"
+msgstr ""
+
+#: includes/wpfts_result_item.php:371
+msgid "Not found"
+msgstr ""
+
+#: includes/wpfts_output.php:416
+msgid ""
+"Notice: this is a <b>beta version</b> of the Smart Excerpt function. In case "
+"it does not work for your theme/site, please do not hesistate to send us "
+"some information with screenshots and theme name <a href=\"https:"
+"//fulltextsearch.org/contact/\" target=\"_blank\">here</a>."
+msgstr ""
+
+#: includes/wpfts_output.php:344
+msgid "Optimal Length"
+msgstr ""
+
+#: includes/wpfts_output.php:402
+msgid "Optimal Length is ignored here"
+msgstr ""
+
+#: includes/wpfts_core.php:836
+msgid "Optimal Length should be a number from 10 to 10240"
+msgstr ""
+
+#: includes/wpfts_output.php:269
+msgid "Parent Post ID"
+msgstr ""
+
+#: includes/wpfts_output.php:68
+msgid "Pending"
+msgstr ""
+
+#: includes/wpfts_output.php:545
+msgid "pending (Pending)"
+msgstr ""
+
+#: includes/wpfts_core.php:969
+msgid "Please specify a number"
+msgstr ""
+
+#: includes/wpfts_core.php:966
+msgid "Please specify post ID"
+msgstr ""
+
+#: includes/wpfts_core.php:1069
+msgid "Please specify search query"
+msgstr ""
+
+#: includes/wpfts_output.php:262
+msgid "Post ID"
+msgstr ""
+
+#: includes/wpfts_output.php:569
+msgid "Post ID:"
+msgstr ""
+
+#: includes/wpfts_output.php:265
+msgid "Post Slug"
+msgstr ""
+
+#: includes/wpfts_output.php:611
+msgid "Post Status:"
+msgstr ""
+
+#: includes/wpfts_output.php:266
+msgid "Post Type"
+msgstr ""
+
+#: includes/wpfts_output.php:607
+msgid "Post Type:"
+msgstr ""
+
+#: includes/wpfts_output.php:58 includes/wpfts_output.php:67
+#: includes/wpfts_output.php:68
+msgid "posts"
+msgstr ""
+
+#: includes/wpfts_core.php:1244
+msgid "posts per page"
+msgstr ""
+
+#: includes/wpfts_output.php:564
+msgid "Pre-indexing Filter Tester"
+msgstr ""
+
+#: includes/wpfts_output.php:546
+msgid "private (Private)"
+msgstr ""
+
+#: includes/wpfts_output.php:542
+msgid "publish (Published)"
+msgstr ""
+
+#: includes/wpfts_output.php:586
+msgid "Query:"
+msgstr ""
+
+#: includes/wpfts_output.php:270
+msgid "Random"
+msgstr ""
+
+#: includes/wpfts_output.php:154
+msgid "Rebuild Index"
+msgstr ""
+
+#: includes/wpfts_core.php:1162
+msgid "Relevance"
+msgstr ""
+
+#: includes/wpfts_output.php:261
+msgid "Relevance (WP default)"
+msgstr ""
+
+#: includes/wpfts_output.php:155 includes/templates/admin_options.php:156
+msgid "Resetting"
+msgstr ""
+
+#: includes/wpfts_core.php:985
+#, php-format
+msgid "Results of Pre-indexing Filter Tester for Post ID = %s"
+msgstr ""
+
+#: includes/wpfts_core.php:1082
+#, php-format
+msgid "Results of search for query = \"%s\""
+msgstr ""
+
+#: fulltext-search.php:163 includes/templates/admin_options.php:108
+#: includes/templates/admin_options.php:170
+msgid "Sandbox Area"
+msgstr ""
+
+#: includes/templates/licensing.php:21
+#: includes/templates/main-configuration.php:20
+#: includes/templates/smart-excerpts.php:20
+msgid "Save Changes"
+msgstr ""
+
+#: includes/templates/indexing-engine.php:20
+msgid "Save Changes and Upgrade Index"
+msgstr ""
+
+#: includes/wpfts_result_item.php:375
+msgid "Score"
+msgstr ""
+
+#: includes/wpfts_output.php:370
+msgid "Score/Relevance"
+msgstr ""
+
+#: includes/templates/admin_options.php:64
+msgid "Search and Relevance Settings"
+msgstr ""
+
+#: includes/templates/admin_options.php:38
+msgid "Search Engine Status"
+msgstr ""
+
+#: includes/wpfts_output.php:282
+msgid "Search Order"
+msgstr ""
+
+#: includes/wpfts_output.php:255
+msgid "Search Order By"
+msgstr ""
+
+#: includes/wpfts_output.php:581
+msgid "Search Tester"
+msgstr ""
+
+#: fulltext-search.php:147 fulltext-search.php:198
+msgid "Settings"
+msgstr ""
+
+#: includes/wpfts_core.php:1255
+#, php-format
+msgid "Shown <span>%1s</span> from <b>%2s</b>"
+msgstr ""
+
+#: includes/wpfts_output.php:365
+msgid "Smart Excerpt text"
+msgstr ""
+
+#: fulltext-search.php:162 includes/templates/admin_options.php:100
+#: includes/templates/admin_options.php:169
+msgid "Smart Excerpts"
+msgstr ""
+
+#: fulltext-search.php:208
+msgid "Sorry, but you do not have permissions to change settings."
+msgstr ""
+
+#: includes/templates/admin_options.php:156
+msgid "Start Indexing"
+msgstr ""
+
+#: includes/wpfts_core.php:1160
+msgid "Status"
+msgstr ""
+
+#: includes/wpfts_output.php:462
+msgid "Stop Words"
+msgstr ""
+
+#: includes/wpfts_core.php:1479
+msgid "Switch to"
+msgstr ""
+
+#: includes/wpfts_core.php:1471
+msgid "Switching"
+msgstr ""
+
+#: includes/wpfts_core.php:1471
+msgid "Switching is in progress"
+msgstr ""
+
+#: includes/wpfts_core.php:1474
+msgid "Switching was<br>not completed"
+msgstr ""
+
+#: includes/wpfts_output.php:574
+msgid "Test Filter"
+msgstr ""
+
+#: includes/wpfts_output.php:591
+msgid "Test Search"
+msgstr ""
+
+#: includes/wpfts_output.php:154
+msgid ""
+"The action will rebuild the search index, which could take some time. Are "
+"you sure?"
+msgstr ""
+
+#: fulltext-search.php:132
+msgid ""
+"The conversion process will take some time,\n"
+"during which you should stay on this page of the browser.\n"
+"\n"
+"If the progress value does not change for more than 2 minutes,\n"
+"refresh the page manually."
+msgstr ""
+
+#: includes/wpfts_core.php:798 includes/wpfts_core.php:863
+#: includes/wpfts_core.php:944 includes/wpfts_core.php:1040
+#: includes/wpfts_core.php:1206 includes/wpfts_core.php:1227
+msgid "The form is outdated. Please refresh the page and try again."
+msgstr ""
+
+#: includes/wpfts_core.php:1026
+msgid "The post with specified ID is not found."
+msgstr ""
+
+#: includes/wpfts_core.php:746
+#, php-format
+msgid ""
+"The weight value of cluster \"%s\" should be numeric value from 0.0 to 1.0"
+msgstr ""
+
+#: includes/wpfts_output.php:468
+msgid "the, a, an, ...etc"
+msgstr ""
+
+#: includes/wpfts_core.php:786 includes/wpfts_core.php:854
+#: includes/wpfts_core.php:933 includes/wpfts_core.php:978
+#: includes/wpfts_core.php:1077
+msgid "There are errors"
+msgstr ""
+
+#: includes/wpfts_core.php:1542
+msgid "This operation is impossible while indexing is in progress."
+msgstr ""
+
+#: includes/wpfts_core.php:259
+msgid ""
+"This plugin requires WordPress 3.0 or newer. Please update your WordPress "
+"installation to activate this plugin."
+msgstr ""
+
+#: includes/wpfts_core.php:1109
+#, php-format
+msgid "Time spent: <b>%.3f</b> sec"
+msgstr ""
+
+#: includes/wpfts_output.php:264
+msgid "Title"
+msgstr ""
+
+#: includes/wpfts_core.php:1161
+msgid "Title, Thumbnail, Excerpt"
+msgstr ""
+
+#: includes/wpfts_core.php:1000
+msgid "Token"
+msgstr ""
+
+#: includes/wpfts_output.php:547
+msgid "trash (Trash)"
+msgstr ""
+
+#: includes/wpfts_core.php:1159
+msgid "Type"
+msgstr ""
+
+#: includes/templates/admin_options.php:47
+msgid "Useful Information"
+msgstr ""
+
+#: includes/wpfts_output.php:252
+msgid ""
+"Wordpress is looking for posts using Main Search functionality when the "
+"visitor enters search term in Search Widget or enter the link with <b>/?"
+"s=term</b> parameter. This group of settings helps you to set up default "
+"parameters for such searches. Note: it will be not applied for other "
+"searches."
+msgstr ""
+
+#: fulltext-search.php:157
+msgid "WP FullText Search"
+msgstr ""
+
+#. Name of the plugin
+msgid "WP Fulltext Search"
+msgstr ""
+
+#: includes/templates/admin_header.php:33
+msgid "WP FullText Search Options"
+msgstr ""
+
+#: includes/wpfts_output.php:326
+msgid ""
+"WPFTS can output search results in a Google-like way - showing only "
+"sentences which contains search words and highlighting them. Wordpress by "
+"default does not show any content for result items if the items are "
+"attachments. <b>Pro version only</b>: Smart Excerpts function can output "
+"attachment content too. <a href=\"https://fulltextsearch."
+"org/documentation/#smart_excerpts\" target=\"_blank\">Check details</a>."
+msgstr ""
+
+#: includes/wpfts_output.php:98
+msgid "WPFTS Documentation"
+msgstr ""
+
+#: includes/wpfts_output.php:97
+msgid "WPFTS Home"
+msgstr ""
+
+#: includes/wpfts_output.php:584
+msgid ""
+"You can test search with any query here. Standard wordpress <b>WP_Query</b> "
+"object with WPFTS features will be used."
+msgstr ""
+
+#: includes/wpfts_output.php:567
+msgid ""
+"You can test your own <b>wpfts_index_post</b> filter here. Just enter an ID "
+"of a post you want and press Test Filter button."
+msgstr ""

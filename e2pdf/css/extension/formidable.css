@@ -1,0 +1,14 @@
+.e2pdf-dialog .visual-mapper label.frm_hidden,
+.e2pdf-dialog .visual-mapper legend.frm_screen_reader {
+    display: none;
+}
+
+.e2pdf-vm-content .frm_fields_container h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.e2pdf-vm-content .frm_style_formidable-style.with_frm_style .frm_repeat_sec {
+    margin-top: 0;
+    margin-bottom: 0;
+}

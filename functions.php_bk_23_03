@@ -1,0 +1,513 @@
+<?php
+/**
+ * @link https://arrowicode.com
+ * @author Vietsmiler
+ * @package Arrowicode
+ */
+if ( ! function_exists( 'arrowicode_setup' ) ) :
+	function arrowicode_setup() {
+		add_theme_support( 'automatic-feed-links' );
+		add_theme_support( 'title-tag' );
+		add_theme_support( 'post-thumbnails' );
+		register_nav_menus( array(
+			'primary' => esc_html__( 'Primary', 'arrowicode' ),
+		) );
+		register_nav_menus( array(
+			'top-header' => esc_html__( 'Top Header', 'arrowicode' ),
+		) );
+		register_nav_menus( array(
+			'menu-home' => esc_html__( 'Menu Home', 'arrowicode' ),
+		) );
+		add_theme_support( 'html5', array(
+			'search-form',
+			'comment-form',
+			'comment-list',
+			'gallery',
+			'caption',
+		) );
+	}
+endif;
+add_action( 'after_setup_theme', 'arrowicode_setup' );
+
+function arrowicode_scripts() {		
+	wp_enqueue_style( 'arrowicode-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'materialize-style', get_template_directory_uri().'/css/assets/owl.carousel.css' );
+
+	wp_enqueue_script( 'arrowicode-owl', get_template_directory_uri() . '/js/owl.carousel.min.js', array('jquery'), '2.0', true );
+	wp_enqueue_script( 'dateFormat.min', get_template_directory_uri() . '/js/dateFormat.min.js', array('jquery'), '2.0', true );
+	wp_enqueue_script( 'html5lightbox.js', get_template_directory_uri() . '/js/html5lightbox.js', array('jquery'), '2.0', true );
+	wp_enqueue_script( 'isotope.pkgd.min.js', get_template_directory_uri() . '/js/isotope.pkgd.min.js', array('jquery'), '2.0', true );
+	wp_enqueue_script( 'jquery.sticky-kit.min', get_template_directory_uri() . '/js/jquery.sticky-kit.min.js', array('jquery'), '2.0', true );
+	wp_enqueue_script( 'ResizeSensor', get_template_directory_uri() . '/js/ResizeSensor.js', array('jquery'), '2.0', true );
+	wp_enqueue_script( 'arrowicode-scrollbar', get_template_directory_uri() . '/js/jquery.scrollbar.js', array('jquery'), '3.8', true );	
+	wp_enqueue_script( 'main_js', get_template_directory_uri().'/js/main.js',array('jquery'), '3.8', true );
+}
+add_action( 'wp_enqueue_scripts', 'arrowicode_scripts' );
+add_action( 'admin_enqueue_scripts', 'arrowicode_admin_scripts' );
+function arrowicode_admin_scripts() {
+	
+	wp_enqueue_style( 'jquery.datetimepicker.css_admin', get_template_directory_uri().'/css/jquery.datetimepicker.css' );
+	wp_enqueue_style( 'admin_css', get_template_directory_uri() . '/css/admin-style.css', false, '1.0.0' );
+
+	wp_enqueue_script( 'bootstrap.min.js', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '3.8', true );
+	wp_enqueue_script( 'jquery.datetimepicker.full.js_admin', get_template_directory_uri() . '/js/jquery.datetimepicker.full.js', array('jquery'), '3.8', true );
+    wp_enqueue_script( 'admin_style_js', get_template_directory_uri().'/js/admin-style.js',array('jquery'), '3.8', true );
+}
+/**
+ * Theme option.
+ */
+require get_template_directory() . '/inc/theme-option.php';
+/**
+ * widgets.
+ */
+require get_template_directory() . '/inc/widgets.php';
+require get_template_directory() . '/BFI_Thumb.php';
+require_once get_template_directory() . '/inc/shortcode.php';
+/**
+ * Register widget area.
+ */
+function arrowicode_widgets_init() {
+	register_sidebar( array(
+		'name'          => esc_html__( 'Contact infomation', 'arrowicode' ),
+		'id'            => 'contact_info',
+		'description'   => esc_html__( 'Add widgets here.', 'arrowicode' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h4 class="widget-title">',
+		'after_title'   => '</h4>',
+	) );
+    register_sidebar( array(
+		'name'          => esc_html__( 'Hình thức thanh toán học phí', 'arrowicode' ),
+		'id'            => 'what_payment',
+		'description'   => esc_html__( 'Add widgets here.', 'arrowicode' ),
+		'before_widget' => '<div class="recieve_from_course">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h4 class="widget-title">',
+		'after_title'   => '</h4>',
+	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Hình thức thanh toán học phí popup', 'arrowicode' ),
+		'id'            => 'what_payment_2',
+		'description'   => esc_html__( 'Add widgets here.', 'arrowicode' ),
+		'before_widget' => '<div class="course_popup">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h4 class="widget-title">',
+		'after_title'   => '</h4>',
+	) );
+    register_sidebar( array(
+		'name'          => esc_html__( 'Shop', 'arrowicode' ),
+		'id'            => 'shop_product',
+		'description'   => esc_html__( 'Add widgets here.', 'arrowicode' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h4 class="widget-title">',
+		'after_title'   => '</h4>',
+	) ); 
+	register_sidebar( array(
+		'name'          => esc_html__( 'Sidebar right', 'arrowicode' ),
+		'id'            => 'sidebar_right',
+		'description'   => esc_html__( 'Add widgets here.', 'arrowicode' ),
+		'before_widget' => '<section id="%1$s" class="sidebar_right">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h4 class="widget-title">',
+		'after_title'   => '</h4>',
+	) ); 
+   
+    register_sidebar( array(
+		'name'          => esc_html__( 'Về chúng tôi', 'arrowicode' ),
+		'id'            => 'about_us',
+		'description'   => esc_html__( 'Add widgets here.', 'arrowicode' ),
+		'before_widget' => '<section id="%1$s" class="widget about-us-wg">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h4 class="widget-title">',
+		'after_title'   => '</h4>',
+	) ); 
+	register_sidebar( array(
+		'name'          => esc_html__( 'Quick link', 'arrowicode' ),
+		'id'            => 'quick_link',
+		'description'   => esc_html__( 'Add widgets here.', 'arrowicode' ),
+		'before_widget' => '<section id="%1$s" class="widget quick-link-wg">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h4 class="widget-title">',
+		'after_title'   => '</h4>',
+	) ); 
+   
+    register_sidebar( array(
+		'name'          => esc_html__( 'List News', 'arrowicode' ),
+		'id'            => 'list_news',
+		'description'   => esc_html__( 'Add widgets here.', 'arrowicode' ),
+		'before_widget' => '<section id="%1$s" class="widget subcribe-news-wg">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h4 class="widget-title">',
+		'after_title'   => '</h4>',
+	) ); 
+   
+    register_sidebar( array(
+		'name'          => esc_html__( 'Facebook', 'arrowicode' ),
+		'id'            => 'facebook',
+		'description'   => esc_html__( 'Add widgets here.', 'arrowicode' ),
+		'before_widget' => '<section id="%1$s" class="widget facebook-wd">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h4 class="widget-title">',
+		'after_title'   => '</h4>',
+	) ); 
+   
+}
+add_action( 'widgets_init', 'arrowicode_widgets_init' );
+
+//hide adminbar
+add_action('after_setup_theme', 'remove_admin_bar');
+function remove_admin_bar() {
+	if (!current_user_can('administrator') && !is_admin()) {
+	  show_admin_bar(false);
+	}
+}
+
+//filter logout
+add_action( 'wp_logout', 'auto_redirect_external_after_logout');
+function auto_redirect_external_after_logout(){
+  wp_redirect(home_url());
+  exit();
+}
+//filter wp mail html
+add_filter('wp_mail_content_type','wpdocs_set_html_mail_content_type');
+function wpdocs_set_html_mail_content_type($content_type){
+	return 'text/html';
+}
+//funtion crop_img
+function crop_img($w, $h, $url_img){
+ $params = array( 'width' => $w, 'height' => $h);
+ return bfi_thumb($url_img, $params );
+}
+
+//funtion crop_img
+function get_favicon(){
+    global $arrow_option;
+    $favicon  = $arrow_option['favicon'];
+    echo '<link rel="icon" type="image/png" href="'.$favicon['url'].'" sizes="32x32"/>';
+}
+
+//set view
+function postview_set($postID) {
+    $count_key = 'postview_number';
+    $count = get_post_meta($postID, $count_key, true);
+    if($count==''){
+        $count = 0;
+        delete_post_meta($postID, $count_key);
+        add_post_meta($postID, $count_key, '0');
+    }else{
+        $count++;
+        update_post_meta($postID, $count_key, $count);
+    }
+}
+function postview_get($postID){
+    $count_key = 'postview_number';
+    $count = get_post_meta($postID, $count_key, true);
+    if($count==''){
+        delete_post_meta($postID, $count_key);
+        add_post_meta($postID, $count_key, '0');
+        return "0";
+    }
+    return $count;
+}
+//update version acf
+function my_acf_init() {	
+	acf_update_setting('select2_version', 4);	
+}
+add_action('acf/init', 'my_acf_init');
+//Register Course
+function register_course(){
+	global $arrow_option;
+	$admin_email = $arrow_option['email'];
+	$course = intval($_REQUEST['course']);
+	if($course != null){
+		$args = array (
+	        'post_type' => 'khoa_hoc',
+	        'orderby' => 'date',
+	        'order'=>'desc',
+	        'post_status' => 'publish',
+	        'posts_per_page' => 1,
+	        'post__in' => array($course),
+	    );
+	    $query = new WP_Query( $args );
+	    if ( $query->have_posts() ){
+	        while ( $query->have_posts() ) : $query->the_post();
+	            $title_course = get_the_title();
+	        endwhile;wp_reset_query();
+	    }
+	}
+	$name = $_REQUEST['name'];
+	$email = $_REQUEST['email'];
+	$phone = $_REQUEST['phone'];
+	$currentdate = $_REQUEST['currentdate'];
+	$exp = explode('/',$currentdate);
+	$currentdate = $exp[2].'-'.$exp[1].'-'.$exp[0];
+	$body = "";
+	if($course != null && $name != null && $email != null && $phone != null){
+		$title = "Đăng kí khóa học ".$term->name.' của '.$name;
+		$body .= '<h3 style="color:#500050">Thông tin đăng ký</h3>';
+		$body .= '<p style="color:#500050">Họ tên người đăng ký:'.$name.'</p>';
+		$body .= '<p style="color:#500050">Địa chỉ Email: '.$email.'</p>';
+		$body .= '<p style="color:#500050">Số điện thoại: '.$phone.'</p>';
+		$body .= '<p style="color:#500050">Môn học đăng ký: '.$title_course.'</p>';
+		$body .= '<h4 style="color:#000;text-align:center;padding-top:10px;border-top:1px solid #ccc;margin-top:45px;">Tin nhắn được gửi tự động từ <a href="'.home_url().'">Design Love</a></h4>';
+		wp_mail($admin_email, $title, $body);
+		global $wpdb;
+		$table_name = $wpdb->prefix . "manager";
+		$datum = $wpdb->get_results('select * from '.$table_name.' where email = "'.$email.'" and subject_id = "'.$course.'" and phone = "'.$phone.'"');
+		if(count($datum) == 0){
+			$wpdb->insert( $table_name, array('name' => $name, 'email' => $email,'subject_id'=> $course ,'phone' => $phone,'subject' => $title_course,'date' => $currentdate));
+			echo '1';
+		}else{
+			echo "2";
+		}
+	}else{
+		echo '0';
+	}
+	exit;
+}
+add_action( 'wp_ajax_register_course', 'register_course' );
+add_action( 'wp_ajax_nopriv_register_course', 'register_course' );
+
+
+function try_course(){
+	global $arrow_option;
+	$admin_email = $arrow_option['email'];
+	$course = intval($_REQUEST['course']);
+	if($course != null){
+		$args = array (
+	        'post_type' => 'khoa_hoc',
+	        'orderby' => 'date',
+	        'order'=>'desc',
+	        'post_status' => 'publish',
+	        'posts_per_page' => 1,
+	        'post__in' => array($course),
+	    );
+	    $query = new WP_Query( $args );
+	    if ( $query->have_posts() ){
+	        while ( $query->have_posts() ) : $query->the_post();
+	            $title_course = get_the_title();
+	        endwhile;wp_reset_query();
+	    }
+	}
+	$name = $_REQUEST['name'];
+	$email = $_REQUEST['email'];
+	$phone = $_REQUEST['phone'];
+	$currentdate = $_REQUEST['currentdate'];
+	$exp = explode('/',$currentdate);
+	$currentdate = $exp[2].'-'.$exp[1].'-'.$exp[0];
+	$body = "";
+	if($course != null && $name != null && $email != null && $phone != null){
+		$title = "Đăng kí khóa học ".$term->name.' của '.$name;
+		$body .= '<h3 style="color:#500050">Thông tin đăng ký</h3>';
+		$body .= '<p style="color:#500050">Họ tên người đăng ký:'.$name.'</p>';
+		$body .= '<p style="color:#500050">Địa chỉ Email: '.$email.'</p>';
+		$body .= '<p style="color:#500050">Số điện thoại: '.$phone.'</p>';
+		$body .= '<p style="color:#500050">Môn học đăng ký học thử: '.$title_course.'</p>';
+		$body .= '<h4 style="color:#000;text-align:center;padding-top:10px;border-top:1px solid #ccc;margin-top:45px;">Tin nhắn được gửi tự động từ <a href="'.home_url().'">Design Love</a></h4>';
+		wp_mail($admin_email, $title, $body);
+		global $wpdb;
+		$table_name = $wpdb->prefix . "manager";
+		$course = $course . "-đăng ký học thử";
+		$datum = $wpdb->get_results('select * from '.$table_name.' where email = "'.$email.'" and subject_id = "'.$course.'" and phone = "'.$phone.'"');
+		if(count($datum) == 0){
+			$wpdb->insert( $table_name, array('name' => $name, 'email' => $email,'subject_id'=> $course ,'phone' => $phone,'subject' => $title_course,'date' => $currentdate));
+			echo '1';
+		}else{
+			echo "2";
+		}
+	}else{
+		echo '0';
+	}
+	exit;
+}
+add_action( 'wp_ajax_try_course', 'try_course' );
+add_action( 'wp_ajax_nopriv_try_course', 'try_course' );
+// change url query string
+function merge_querystring($url = null,$query = null,$recursive = false)
+{
+  if($url == null)
+    return false;
+  if($query == null)
+    return $url;
+  $url_components = parse_url($url);
+  if(empty($url_components['query']))
+    return $url.'?'.ltrim($query,'?');
+  parse_str($url_components['query'],$original_query_string);
+  parse_str(parse_url($query,PHP_URL_QUERY),$merged_query_string);
+  if($recursive == true)
+    $merged_result = array_merge_recursive($original_query_string,$merged_query_string);
+  else
+    $merged_result = array_merge($original_query_string,$merged_query_string);
+  return str_replace($url_components['query'],http_build_query($merged_result),$url);
+}
+// submenu page order
+add_action('admin_menu', 'manager_course_menu');
+function manager_course_menu() {
+    add_submenu_page( 'edit.php?post_type=khoa_hoc', 'List Register Course', 'List Register Course', 'manage_options', 'submit-register-submenu-page', 'submit_register_menu_options' ); 
+}
+function submit_register_menu_options() {
+	if ( !current_user_can( 'manage_options' ) )  {
+		wp_die( __( 'You do not have sufficient permissions to access this page.' ) );
+	}
+	global $wpdb;
+	$tb = $wpdb->prefix . "manager";
+	if (isset($_GET['start'])) {
+		$date_start = $_GET['start'];
+	} else {
+		$date_start = null;
+	}
+	if (isset($_GET['end'])) {
+		$date_end = $_GET['end'];
+	} else {
+		$date_end = null;
+	}
+	if ($date_start) {
+		$date_start = date_format(date_create($date_start), "Y-m-d"); 
+	}
+	if ($date_end) {
+		$date_end = date_format(date_create($date_end), "Y-m-d"); 
+	}
+	if (isset($_GET['p'])) {
+		$page = intval($_GET['p']);
+		if ($page < 1) {
+			$page = 1;
+		}
+	} else {
+		$page = 1;
+	}
+	$max = 5;
+	$start = ($page - 1) * $max;
+	if ($date_start == "" && $date_end == "") {
+		$total_data = $wpdb->get_results("select * from ".$tb." order by ID asc");
+		$data = $wpdb->get_results("select * from ".$tb." order by ID asc LIMIT ".$start.", ".$max);
+	} elseif ($date_start == "" && $date_end != "") {
+		$total_data = $wpdb->get_results("select * from ".$tb." where date <= '".$date_end."' order by ID asc");
+		$data = $wpdb->get_results("select * from ".$tb." where date <= '".$date_end."' order by ID asc LIMIT ".$start.", ".$max);
+	} elseif ($date_start != "" && $date_end == "") {
+		$total_data = $wpdb->get_results("select * from ".$tb." where date >= '".$date_start."' order by ID asc");
+		$data = $wpdb->get_results("select * from ".$tb." where date >= '".$date_start."' order by ID asc LIMIT ".$start.", ".$max);
+	} else {
+		$total_data = $wpdb->get_results("select * from ".$tb." where date between '".$date_start."' and '".$date_end."' order by ID asc");
+		$data = $wpdb->get_results("select * from ".$tb." where date between '".$date_start."' and '".$date_end."' order by ID asc LIMIT ".$start.", ".$max);
+	}
+	$total_data = count($total_data);
+	$page_number = ceil($total_data / $max);
+	$page_number = intval($page_number);
+	?>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<div class="wrap">
+		<div id="submit_lession_manager">
+			<h3 class="title">Danh sách</h3>
+			<div class="filter-date">
+				<form action="" method="get" class="form-inline">
+					<div class="form-group">
+						<label>Từ ngày </label>
+						<input type="text" name="start" value="" class="date form-control" />
+					</div>
+					<div class="form-group">
+						<label> đến ngày</label>
+						<input type="text" name="end" value="" class="date form-control" />
+					</div>
+					<button type="submit" class="btn btn-default">Xem</button>
+					<input type="hidden" name="page" value="submit-register-submenu-page">
+					<input type="hidden" name="post_type" value="khoa_hoc">
+				</form>
+			</div>
+			<?php if($data): ?>
+				<div class="table-responsive">
+					<table class="table table-bordered table-hover table-striped">
+						<thead>
+							<th class="name">Số thứ tự</th>
+							<th class="course-name">Họ và tên</th>
+							<th class="course-name">Số điện thoại</th>
+							<th class="course-type">Địa chỉ Email</th>
+							<th class="course-type">Tên khóa học</th>
+							<th class="course-time">Ngày đăng ký</th>
+						</thead>
+						<tbody class="list-item">
+							<?php foreach ($data as $item) :?>
+								<tr>
+									<td><?php echo $item->ID; ?></td>
+									<td><?php echo $item->name; ?></td>
+									<td><?php echo $item->phone; ?></td>
+									<td><?php echo $item->email; ?></td>
+									<td><?php echo $item->subject.'( ID:'.$item->subject_id.' )'; ?></td>
+									<td><?php $exp = explode('-',$item->date);$currentdate = $exp[2].'-'.$exp[1].'-'.$exp[0];echo $currentdate; ?></td>
+								</tr>
+							<?php endforeach; ?>
+						</tbody>
+					</table>
+				</div>
+				<?php if ($page_number > 1) : ?>
+					<ul class="pagination">
+						<?php for ($i = 1; $i <= $page_number ; $i++) { 
+							if ($page == $i) {
+								$class = "active";
+							} else {
+								$class= "";
+							}
+							if ($i == 1) {
+								echo '<li class="'.$class.'"><a href="'.remove_query_arg(array('p')).'">'.$i.'</a></li>';
+							} else {
+								echo '<li class="'.$class.'"><a href="'.merge_querystring(remove_query_arg(array('p')), '?p='.$i).'">'.$i.'</a></li>';
+							}
+						} ?>
+					</ul>
+				<?php endif; ?>
+			<?php else:
+				echo '<p class="no-result">Không có dữ liệu!</p>';
+			endif;?>
+		</div>
+	</div>
+	<?php 
+}
+function register_course_form($title, $btn_class, $btn_value){
+	ob_start(); ?>
+	<div class="form-register">
+      <h3><?php echo __($title); ?></h3>
+      <p class="sub-title-popup">Hãy hoàn thành form đăng ký học bên dưới, chúng tôi sẽ liên lạc bạn sớm nhất có thể.</p>
+      <div class="select-course register-item">
+        <label><?php echo __("Khóa học:"); ?></label>
+        <select name="course_user" class="form-control">
+          <?php $related = new WP_Query(array(
+            'post_type'=>'khoa_hoc',
+            'post_status'=>'publish',
+            'orderby' => 'ID',
+            'order' => 'DESC',
+            'posts_per_page'=> -1,
+          )); 
+          if($related->have_posts()): ?>
+              <?php while ($related->have_posts()) : $related->the_post(); ?>
+                <option value="<?php echo get_the_ID(); ?>" <?php if($id_current == get_the_ID()){ echo "selected";} ?>><?php the_title(); ?></option>
+              <?php endwhile;
+          endif;?>
+        </select>
+        <p class="notify"></p>
+      </div>
+      <div class="name register-item">
+          <label><?php echo __("Họ tên:"); ?></label>
+          <input class="form-control" type="text" name="name_user" class="name_user">
+          <p class="notify"></p>
+      </div>
+      <div class="email register-item">
+          <label><?php echo __("Địa chỉ Email:"); ?></label>
+          <input class="form-control" type="email" name="email_user" class="email_user">
+          <p class="notify"></p>
+      </div>
+      <div class="phone register-item">
+          <label><?php echo __("Số điện thoại:"); ?></label>
+          <input class="form-control" type="number" name="number_user" class="email_user">
+          <p class="notify"></p>
+      </div>
+      <div class="register-now">
+          <input class="submit-course <?php echo $btn_class; ?>" type="submit" name="submit" value="<?php echo $btn_value; ?>">
+          <div class="loading"><img src="<?php echo get_stylesheet_directory_uri().'/images/loading_blue.gif'; ?>"></div>
+          <p class="notify"></p>
+      </div>
+    </div>
+    <div class="close"><i class="fa fa-times" aria-hidden="true"></i></div>
+    <?php $result = ob_get_contents();
+	ob_end_clean();
+	echo $result;
+}
